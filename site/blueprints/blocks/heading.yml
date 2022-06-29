@@ -1,0 +1,33 @@
+#
+# @info Heading block 
+# @path site/blueprints/blocks/heading.yml
+# @date 20220515
+#
+
+name: Überschrift
+icon: headline
+wysiwyg: true
+preview: heading
+
+fields:
+  level:
+    label: field.blocks.heading.level
+    type: select
+    empty: false
+    default: "h3"
+    width: 1/6
+    options:
+      - h3
+      # - h4
+      # - h5
+      # - h6
+  text:
+    label: field.blocks.heading.text
+    type: writer
+    inline: true
+    marks: false
+    width: 5/6
+    placeholder: field.blocks.heading.placeholder
+  link: 
+    type: pages
+    multiple: false

@@ -1,0 +1,51 @@
+/*
+ *
+ * @info Additional styles for the vault template
+ * @path assets/css/templates/vault.css
+ * @date 20220626
+ * 
+ */
+
+ [data-block*="list"] {
+  list-style-type: none;
+ }
+ 
+ li strong {
+  background: #e05f2d;
+  color: #FFFFFF;
+  font-style:normal;
+  font-size: 85%;
+  padding: .1rem .25rem ;
+  border-radius:.2rem;
+  opacity: 1;
+}
+
+li em {
+  font-style:normal;
+  opacity: .5;
+}
+
+input {
+  padding: .3rem .45rem ;
+}
+
+input[type="password"] {
+  background: #f7d2c6;
+}
+
+input[type="submit"] {
+  background: #e05f2d;
+  color: #FFFFFF;
+}
+
+.notification__error {
+  color: #e05f2d;
+}
+
+nav {
+  background-color: #007956;
+}
+
+nav a {
+  color: #f7f4ef;
+}

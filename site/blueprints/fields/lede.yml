@@ -1,0 +1,14 @@
+#
+# @info Lede field
+# @path site/blueprints/fields/lede.yml
+# @date 20220515
+#
+
+label: Einleitung
+type: writer
+inline: true
+marks:
+  - underline
+  - link
+width: 1/2
+size: medium

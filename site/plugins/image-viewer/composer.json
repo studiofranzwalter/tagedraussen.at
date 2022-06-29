@@ -1,0 +1,11 @@
+{
+    "name": "studiofranzwalter/imageviewer",
+    "description": "Adding additional icons",
+    "type": "kirby-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Franz Walter"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+/*
+ *
+ * @info Quote block
+ * @path assets/css/snippets/quotes.css
+ * @date 20220508
+ *
+ */
+
+[data-block="quote"] {
+  --grid-column: 3 / -3;
+  --align-content: center;
+  padding-block: calc(var(--space-m) - var(--space-xs));
+}
+
+[data-block="quote"] {
+  /* margin-block: var(--space-xs); */
+  /* padding-inline: var(--space-s-m); */
+  max-width: 40ch;
+  font-family: var(--secondary);
+  font-size: var(--size-2);
+  line-height: var(--size-2);
+  color: var(--highlight);
+}
+
+[data-block="quote"] blockquote p::before {
+  content: open-quote;
+  padding-left: 1ch;
+  margin-left: -2ch;
+}
+
+[data-block="quote"] blockquote p::after {
+  content: close-quote;
+  padding-right: 1ch;
+  margin-right: -2ch;
+}
+
+[data-block="quote"]>cite {
+  font-size: var(--size--1);
+  /* line-height: .5rem !important; */
+  display: inline-flex;
+  line-height: var(--size--2);
+}

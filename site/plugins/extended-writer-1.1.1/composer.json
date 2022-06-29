@@ -1,0 +1,15 @@
+{
+  "name": "coralic/kirby-extended-writer",
+  "description": "Supercharge Kirby's Writer field with new nodes, marks and features",
+  "type": "kirby-plugin",
+  "version": "1.1.1",
+  "license": "MIT",
+  "homepage": "https://github.com/coralic/kirby-extended-writer",
+  "authors": [
+    {
+      "name": "Tobias Möritz",
+      "email": "tobias@moeritz.io",
+      "homepage": "https://moeritz.io"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+#
+# @info Author field
+# @path site/blueprints/fields/author.yml
+# @date 20220515
+#
+
+label: 
+  de: Autor, Urheber
+type: text
+placeholder: "Archiv {{ site.author }}"
+translate: false
+help: "<code contenteditable>->author()</code>"

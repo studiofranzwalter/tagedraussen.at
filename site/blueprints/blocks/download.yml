@@ -1,0 +1,28 @@
+#
+# @info Download block 
+# @path site/blueprints/blocks/download.yml
+# @date 20220530
+#
+
+name: Download
+icon: download
+wysiwyg: true
+preview: fields
+label: false
+
+fields:
+  files:
+    label: 
+      de: Downloads
+      en: Downloads
+    type: files
+    multiple: true
+    layout: list
+    image: false
+    info: '{{ file.niceSize}}'
+    text: '{{ file.name}}.{{ file.extension }}'
+    help: '<code contenteditable>->files()</code>'
+    query: page.children.find('media').files.filterBy('template', 'in', ['download', 'audio', 'video'])
+    uploads:
+      template: download
+      parent: page.children.find('media')

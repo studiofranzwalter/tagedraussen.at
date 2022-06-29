@@ -1,0 +1,14 @@
+{
+    "name": "hananils/kirby-colors",
+    "description": "A color field for Kirby 3",
+    "type": "kirby-plugin",
+    "license": "MIT",
+    "version": "1.6.0",
+    "homepage": "https://github.com/hananils/kirby-colors",
+    "authors": [
+        {
+            "name": "hana+nils · Büro für Gestaltung",
+            "email": "buero@hananils.de"
+        }
+    ]
+}

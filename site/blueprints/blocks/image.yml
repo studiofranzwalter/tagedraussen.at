@@ -1,0 +1,70 @@
+#
+# @info Image block 
+# @path site/blueprints/blocks/image.yml
+# @date 20220515
+#
+# @docs https://getkirby.com/docs/reference/panel/blocks/image
+#
+
+name: Einzelbild
+icon: grid-full
+preview: image
+
+fields:
+  image:
+    image:
+      back: transparent
+      ratio: 3/2
+    label: field.blocks.image.name
+    layout: cards
+    multiple: false
+    query: page.children.find('media')
+    size: tiny
+    template: image
+    type: files
+    help: "<code>image</code>"
+    uploads:
+      template: image
+      parent: page.children.find('media')
+  # author:
+  #   label: Urheber
+  #   type: text
+  #   placeholder: "{{site.metaAuthor}}"
+  #   translate: false
+  #   width: 1/2
+  #   help: "<code>author</code>"
+  aspectRatio:
+    label: field.blocks.image.ratio
+    type: select
+    placeholder: Original
+    width: 1/2
+    help: "<code>aspectRatio</code>"
+    options:
+      1/1: "1:1"
+      2/3: "2:3"
+      3/2: "3:2"
+      4/3: "4:3"
+      16/9: "16:9"
+  full-width:
+    type: checkboxes
+    options:
+      full-width: Gesamte Bildschirmbreite
+      crop: Zuschneiden
+      
+  
+  # caption:
+  #   label: field.blocks.image.caption
+  #   type: writer
+  #   icon: text
+  #   inline: true
+  #   width: 1/2
+  #   help: "<code>caption</code>"
+  # link:
+  #   label: field.blocks.image.link
+  #   type: text
+  #   icon: url
+  
+  # crop:
+  #   label: field.blocks.image.crop
+  #   type: toggle
+  #   width: 1/2

@@ -1,0 +1,14 @@
+#
+# @info Heading field
+# @path site/blueprints/fields/heading.yml
+# @date 20220515
+#
+
+label: 
+  de: Überschrift
+  en: Heading
+placeholder: "{{ page.title }}"
+type: writer
+inline: true
+counter: false
+help: "<code contenteditable>->heading()</code><br>Silben und Wörter können mit (​+​) und (​-​) ergänzt werden."

@@ -1,0 +1,44 @@
+#
+# @info Collage block 
+# @path site/blueprints/blocks/collage.yml
+# @date 20220515
+#
+
+name: Collage
+icon: grid-left
+wysiwyg: true
+preview: fields
+label: false
+  
+fields:
+  heading: 
+    label: Titel
+    type:  text
+    width: 2/3
+    counter: false
+  text:
+    type: writer
+    label: Text
+    nodes: false
+    inline: true
+    placeholder: field.blocks.text.placeholder
+    help: "<code contenteditable>->text()</code>"
+    width: 2/3
+    marks: 
+      - bold
+      - italic 
+      - email
+      - link
+
+  image: 
+    extends: fields/image
+    width: 1/3
+    label: Bild
+    layout: cards
+  
+  imageLink: 
+    extends: fields/link
+    label: "Bild verlinken"
+    width: 1/1
+    empty: Seite auswählen
+    help: "<code contenteditable>->imageLink()</code>"

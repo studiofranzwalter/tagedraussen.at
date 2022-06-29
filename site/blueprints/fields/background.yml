@@ -1,0 +1,13 @@
+#
+# @info Background color field
+# @path site/blueprints/fields/background.yml
+# @date 20220515
+#
+
+label:
+  de: Hintergrundfarbe
+  en: Background
+type: colors
+alpha: true
+contrast: false
+width: 1/2

@@ -1,0 +1,55 @@
+/*
+ *
+ * @info Video block
+ * @path assets/css/snippets/videos.css
+ * @date 20220508
+ *
+ */
+
+video {
+  /* width: 100%; */
+}
+
+[data-block="video"] {
+  /* -webkit-clip-path: url(#media-frame);
+  clip-path: url(#media-frame); */
+  /* padding: 1rem; */
+
+}
+
+[data-block="video"] video {
+  /* Avoid grey background while loading */
+  -webkit-filter: brightness(108.5%);
+  filter: brightness(108.5%);
+
+}
+
+[data-block="video"] figcaption {}
+
+[data-block="video"] p {}
+
+[data-block="video"] noscript {}
+
+[data-block="video"] video {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
+  box-shadow: .25rem .25rem 0px 0px var(--highlight);
+}
+
+
+[data-block="video"].active {
+  -webkit-clip-path: none;
+  clip-path: none;
+  background: none;
+
+}
+
+[data-block="video"].resized {
+  --grid-column: 1 / -1;
+}
+
+[data-block="video"].resized video {
+
+  background-color: var(--black);
+}

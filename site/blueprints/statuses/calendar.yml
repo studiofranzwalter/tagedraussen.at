@@ -1,0 +1,12 @@
+#
+# @info Default page statuses
+# @path site/blueprints/status/default.yml
+# @date 20220508
+#
+
+draft:
+  label: Unveröffentlicht
+  # text: Inhalte im Entwurfsmodus können nur von Panel-Benutzern angesehen werden.
+listed:
+  label: Veröffentlicht
+  # text: The article is online and listed in the blog

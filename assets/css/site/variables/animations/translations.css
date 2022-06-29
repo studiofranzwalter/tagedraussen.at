@@ -1,0 +1,32 @@
+/*
+ *
+ * @info Translation animations
+ * @path assets/css/variables/sizing.css
+ * @date 20220403
+ *
+ */
+
+
+/* @media (min-width: 45em) and (orientation: landscape) {
+} */
+
+[data-animation*="move-up"] {
+
+  --animation-duration: 1.5s;
+  --animation-delay: 2.5s;
+  --animation-repeat: 1;
+
+  animation-name: move-up;
+
+}
+
+
+@keyframes move-up {
+  from {
+    transform: none;
+  }
+
+  to {
+    transform: translateY(calc(12vmin*-1));
+  }
+}

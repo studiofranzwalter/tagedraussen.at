@@ -1,0 +1,21 @@
+#
+# @info Animation select field
+# @path site/blueprints/fields/animation.yml
+# @date 20220515
+#
+
+label:
+  de: Animation
+  en: Animation
+type: select
+translate: false
+options:
+  - value: fadein
+    text: Fade In
+  - value: fadeout
+    text: Fade Out
+  - value: slideup
+    text: Slide Up
+translate: false
+type: select
+  

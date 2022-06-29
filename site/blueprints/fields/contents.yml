@@ -1,0 +1,31 @@
+#
+# @info Contents block field
+# @path site/blueprints/fields/contents.yml
+# @date 20220606
+# 
+
+label: 
+  de: Inhalt
+  en: Contents
+type: blocks
+empty: 
+  de: Inhalte hinzufügen
+  en: Add contents
+help: "<code contenteditable>->contents()</code>" 
+
+fieldsets:
+  - text
+  - heading
+  - list
+  - quote
+  - teaser
+  - collage
+  - image
+  - gallery
+  - video
+  - audio
+  - link
+  - download
+  # - slider
+  # - login
+  

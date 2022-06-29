@@ -1,0 +1,20 @@
+{
+  "lang": "de",
+  "name": "Tage draußen!",
+  "short_name": "Tage draußen!",
+  "description": "Bunte Geschichten der Alpenvereinsjugend Österreich über das Draußen sein.",
+  "icons": [
+    {
+      "src": "/assets/favicons/favicon-128x128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/assets/favicons/favicon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone"
+}

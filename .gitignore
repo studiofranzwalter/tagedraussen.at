@@ -1,0 +1,56 @@
+#
+# @info Default .gitignore for Kirby sites
+# @path .gitignore
+# @date 20220622
+#
+
+# Exclude macOS system files
+Icon?
+!icons
+.DS_Store
+.Spotlight-V100
+.Trashes
+
+# Exclude development files and folders
+*.lock
+*.log
+*.log*
+*.map
+node_modules
+package-lock.json
+
+# Exclude everything cached and temporary
+/media/*
+!/media/index.php
+/site/cache/*
+!/site/cache/index.html
+/site/logs/*
+!/site/logs/index.html
+/site/sessions/*
+!/site/sessions/index.html
+/assets/css/site.concat.css
+/assets/css/site.min.css
+/assets/js/site.min.js
+
+# Exclude sensitive information on public repos
+/.deployignore
+/.deployproduction
+/.deploystaging
+/.well-known/gpg.asc
+/.well-known/security.txt
+/site/accounts/*
+!/site/accounts/ReadME.md
+/site/config/.*
+
+# Exclude webfonts  on public repos
+/assets/fonts/**/*.woff
+/assets/fonts/**/*.woff2
+
+# Exclude site content and content symlinks
+/content/
+/content
+
+# Exclude sitemap
+/sitemap.xml
+# /sitemap.de.xml
+# /sitemap.en.xml

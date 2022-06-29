@@ -1,0 +1,25 @@
+#
+# @info Text block
+# @path site/blueprints/blocks/text.yml
+# @date 20220515
+#
+
+name: 
+  de: Fließtext
+  en: Text
+icon: text
+wysiwyg: true
+preview: text
+
+fields:
+  text:
+    type: writer
+    nodes: false
+    placeholder: field.blocks.text.placeholder
+    help: "<code contenteditable>->text()</code>"
+    width: 1/1
+
+  # background: fields/background
+  # foreground: fields/foreground
+  # animation: fields/animation
+

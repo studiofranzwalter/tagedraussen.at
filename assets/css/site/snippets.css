@@ -1,0 +1,17 @@
+/*
+ *
+ * @info Snippets styles
+ * @path assets/css/snippets.css
+ * @date 20220517
+ * 
+ */
+
+ @import url('snippets/aside.css');
+ /* @import url('snippets/cursors.css'); */
+ @import url('snippets/footer.css');
+ @import url('snippets/forms.css');
+ @import url('snippets/header.css');
+ @import url('snippets/links.css');
+ @import url('snippets/lists.css');
+ @import url('snippets/navigation.css');
+ 

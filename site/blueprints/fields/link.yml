@@ -1,0 +1,12 @@
+#
+# @info Link field
+# @path site/blueprints/fields/link.yml
+# @date 20220515
+#
+
+type: pages
+query: kirby.collection("link")
+info: "{{ page.parent.slug }}/{{ page.slug }}"
+multiple: false
+image: false
+label: Verlinkte Unterseite

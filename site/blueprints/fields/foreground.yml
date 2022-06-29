@@ -1,0 +1,13 @@
+#
+# @info Foreground color field
+# @path site/blueprints/fields/foreground.yml
+# @date 20220515
+#
+
+label:
+  de: Textfarbe
+  en: Foreground
+type: colors
+alpha: true
+contrast: false
+width: 1/2

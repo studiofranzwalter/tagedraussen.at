@@ -1,0 +1,18 @@
+/*
+ *
+ * @info List styles
+ * @path assets/css/snippets/lists.css
+ * @date 20220508
+ *
+ */
+
+ul,
+ol {
+  padding: 0;
+}
+
+ul:where([class]) {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

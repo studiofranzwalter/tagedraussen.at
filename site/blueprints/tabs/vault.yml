@@ -1,0 +1,28 @@
+#
+# @info Vault tab (password-proteced downloads)
+# @path site/blueprints/tabs/vault.yml
+# @date 20220508
+#
+
+icon: lock
+label: Downloads
+
+columns:
+  - width: 1/1
+    sections:
+      vault:
+        type: fields
+        fields:
+          vault:
+            label: Passwortgeschützte Downloads
+            width: 1/1
+            type: files
+            layout: cards
+            info: "{{ file.niceSize}}"
+            query: page.children.find('downloads')
+            help: "<code>vault</code>"
+            multiple: true
+            uploads:
+              parent: page.children.find('downloads')
+              template: downloads
+            template: downloads

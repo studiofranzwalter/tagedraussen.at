@@ -1,0 +1,33 @@
+#
+# @info Slider block
+# @path site/blueprints/blocks/slider.yml
+# @date 20220603
+#
+
+name:
+  de: Slider
+  en: Slider
+icon: settings
+wysiwyg: true
+preview: fields
+label: false
+
+fields:
+  # page:
+  #   type: pages
+  #   query: '{{page.children}}'
+  #   width: 1/2
+  #   label:
+  #     de: Seite
+  #     en: Page
+  #   multiple: false
+  range:
+    label:
+      de: Anzahl Journal-Einträge
+    type: range
+    step: 1
+    min: 0
+    max: 10
+    width: 1/1
+    # tooltip:
+    #  before: 

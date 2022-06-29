@@ -1,0 +1,10 @@
+{
+    "name": "studiofranzwalter/file-components",
+    "type": "kirby-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Franz Walter"
+        }
+    ]
+}

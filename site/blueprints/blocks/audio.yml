@@ -1,0 +1,28 @@
+#
+# @info Download block 
+# @path site/blueprints/blocks/download.yml
+# @date 20220530
+#
+
+name: Audio
+icon: audio
+wysiwyg: true
+preview: fields
+label: false
+
+fields:
+  player:
+    label: 
+      de: Audio-Player
+      en: Audio-Player
+    type: files
+    multiple: true
+    layout: list
+    image: false
+    info: '{{ file.niceSize}}'
+    text: '{{ file.name}}.{{ file.extension }}'
+    help: '<code contenteditable>->files()</code>'
+    query: page.children.find('media').files.filterBy('template', 'in', ['audio'])
+    uploads:
+      template: audio
+      parent: page.children.find('media')

@@ -1,0 +1,22 @@
+#
+# @info Link block 
+# @path site/blueprints/blocks/link.yml
+# @date 20220530
+#
+
+name: Link
+icon: road-sign
+wysiwyg: true
+preview: fields
+label: false
+
+fields:
+  link: 
+    type: link
+    label: " "
+    image:
+      query: ""
+    settings: false
+    options:
+      - page
+      - url

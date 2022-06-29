@@ -1,0 +1,33 @@
+#
+# @info Teaser block 
+# @path site/blueprints/blocks/teaser.yml
+# @date 20220510
+# 
+
+name: Teaser
+icon: grid-top-left
+preview: fields
+wysiwyg: true
+label: false
+
+fields:
+  pages:
+    label: Teaser
+    type: pages
+    multiple: true
+    layout: cardlets
+    size: tiny
+    empty: "Keine Teaser ausgewählt"
+    # query: page.siblings.listed.filterBy('template', 'not in', ['media', 'download']).filterBy('id', 'not in', ['kontakt'])
+    query: page.siblings.listed.filterBy('template', 'not in', ['media', 'download'])
+
+    # info: '{{page.teaserText}}'
+    # text: '{{page.teaserHeading}}'
+    text: '{{page.title}}'
+    image: 
+      query: page.teaserImage.toFile
+      cover: false
+    
+    ratio: 16/9
+    heading: Test
+

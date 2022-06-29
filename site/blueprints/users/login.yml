@@ -1,0 +1,21 @@
+#
+# @info User blueprint for the login role
+# @path site/blueprints/users/login.yml
+# @date 20220508
+#
+
+title: Login
+
+permissions:
+  access:
+    panel: false
+    site: false
+    settings: false
+
+fields:
+  info:
+    label:
+    type: info
+    theme: positive
+    text: |
+      In den __Einstellungen__ können Name, E-Mail, Passwort und Sprache des Panels geändert werden.

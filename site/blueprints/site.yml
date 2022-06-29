@@ -1,0 +1,202 @@
+#
+# @info Site blueprint
+# @path site/blueprints/site.yml
+# @date 20220615
+#
+
+num: zero
+tabs:
+  dashboard:
+    label: Dashboard
+    icon: dashboard
+    columns:
+      - width: 2/3
+        sections:
+          header: 
+            type: fields
+            fields: 
+              heading: 
+                label: Titel
+                disabled: false
+                extends: fields/heading
+                help: "<code contenteditable>$site->heading()</code>"
+              summary: 
+                extends: fields/subheading
+                label: Zusammenfassung
+                help: "<code contenteditable>$site->summary()</code>" 
+          spotlight:
+            label: " "
+            type: pages
+            query: kirby.collection("panel/spotlight")
+            layout: cardlets
+            info: "↻ {{ page.modified('d.m.Y') }}"
+            create: false
+            image:
+              back: "{{ page.iconBackground }}"
+              color: "{{ page.iconForeground }}"
+              icon: "{{ page.icon }}"
+              query: false
+            templates: 
+              - workshops
+              - films
+              - positions
+              - home
+              - conversations
+              - about-us
+              - contact
+      - width: 1/3
+        sections:
+          misc:
+            headline: " "
+            type: pages
+            create: false
+            layout: list
+            image: false
+            help: "<code contenteditable>->collection('panel/misc')</code>"
+            templates: 
+              # - colophon
+              - copyright
+              - privacy
+              - error
+              - simple
+              - landingpages
+              - vault
+              - press
+              - calendar
+  menus:
+    icon: list-bullet
+    label: 
+      de: Menüs
+      en: Menus
+    columns:
+      - width: 1/1
+        sections: 
+          menus: 
+            type: fields
+            fields: 
+              navigation: 
+                type: pages
+                label: 
+                  de: Navigation
+                  en: Navigation
+                image: false
+                width: 1/2
+                help: <code contenteditable>->navigation()</code>
+              footerLinksInt:
+                help: <code contenteditable>->footerLinksInt()</code>
+                type: pages
+                label: 
+                  de: Footer
+                image: false
+                width: 1/2
+              footerLinksSocial:
+                help: <code contenteditable>->navigation()</code>
+                label: 
+                  de: Social Media Links
+                image: false
+                width: 1/2
+                type: structure
+                fields:
+                  name:
+                    label: Item name
+                    type: text
+                  link:
+                    label: Link
+                    type: url
+              footerLinksExt: 
+                label: 
+                  de: Externe Links
+                image: false
+                width: 1/2
+                help: <code contenteditable>->footerLinksExt()</code>
+                type: structure
+                fields:
+                  name:
+                    label: Item name
+                    type: text
+                  link:
+                    label: Link
+                    type: url                
+    
+  meta:
+    label: Meta
+    icon: tag
+    columns:
+      - width: 1/1
+        fields:
+          metaTitle:
+            label: Titel
+            type: text
+            placeholder: "{{page.title}}"
+            help: <code contenteditable>->metaTitle()</code>
+            width: 1/2
+
+          metaAuthor:
+            label: Autor
+            type: text
+            placeholder: "{{site.metaauthor}}"
+            help: <code contenteditable>->metaAuthor()</code>
+            width: 1/2
+
+          metaDescription:
+            label: Beschreibung
+            placeholder: "{{page.summary}}"
+            type: writer
+            inline: true
+            width: 1/3
+            help: <code contenteditable>->metaDescription()</code>
+          metaSummary: 
+            label: Zusammenfassung
+            type: textarea
+            buttons: false
+            width: 1/3
+          
+          metaImage: 
+            label: Image
+            layout: cardlets
+            query: site.find('startseite').children.find('media').images
+            template: media
+            multiple: false
+            info: "{{ file.niceSize}}, {{ file.dimensions }}"
+            uploads:
+              parent: site.find('startseite').children.find('media').images
+              template: media
+            type: files
+            help: <code contenteditable>->metaImage()</code>
+            width: 1/3
+
+          metaRobots:
+            label: Robots
+            type: text
+            placeholder: "follow, index"
+            width: 1/2
+            help: <code contenteditable>->metaRobots()</code>
+
+          metaKeywords:
+            label: Keywords
+            type: tags
+            icon: false
+            width: 1/2
+            help: <code contenteditable>->metaKeywords()</code>
+  
+  # settings:
+  #   extends: tabs/settings
+  #   columns: 
+  #     - width: 1/2
+  #       sections: 
+  #         colors:
+  #           type: fields
+  #           fields:
+  #             background: 
+  #               label: Hintergrund
+  #               type: colors
+  #               help: <code contenteditable>$site->background()</code> Default background color of the website.
+  #             foreground: 
+  #               label: Vordergrund
+  #               type: colors
+  #               help: <code contenteditable>$site->foreground()</code> Default foreground color of the website.
+  #             highlight: 
+  #               label: Highlight
+  #               type: colors
+  #               help: <code contenteditable>$site->highlight()</code> Default highlight color of the website.
+              

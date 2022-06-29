@@ -1,0 +1,67 @@
+/*
+ *
+ * @info Additional styles for the conversations template
+ * @path assets/css/templates/conversations.css
+ * @date 20220530
+ * 
+ */
+
+:where(:root, ::selection) {
+  --background: var(--ice);
+  --foreground: var(--white);
+  --highlight: var(--ice);
+}
+
+:where(header, nav, aside) {
+  --background: var(--ice);
+  --foreground: var(--white);
+  --highlight: var(--white);
+}
+
+aside img {
+  /* filter: contrast(1.5) saturate(0) brightness(0.2) */
+}
+
+nav [data-state*="active"] {
+  --foreground: var(--white);
+  --background: var(--grey);
+}
+
+body {
+  --background: var(--white);
+  --foreground: var(--grey);
+  --highlight: var(--ice);
+}
+
+header [data-block="video"],
+header [data-block="image"] {
+  --highlight: #A7C7C1;
+}
+
+
+
+
+[data-block*="teaser"] figure {
+  --background: var(--white);
+  --foreground: var(--black);
+  --highlight: #A7C7C1;
+  margin-bottom: var(--space-xs);
+}
+
+[data-block*="teaser"] a:hover {
+  --background: #A7C7C1;
+  --foreground: var(--grey);
+  --highlight: var(--white);
+}
+
+[data-block*="teaser"] a:hover figure {
+  mix-blend-mode: lighten;
+}
+
+[data-block="teaser"] img {
+  /* aspect-ratio: 1/1; */
+}
+
+[data-block="teaser"] h3 {
+  display: none;
+}

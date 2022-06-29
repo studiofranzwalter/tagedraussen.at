@@ -1,0 +1,56 @@
+#
+# @info Default photo blueprint
+# @path site/blueprints/files/photo.yml
+#
+
+accept:
+  mime: image/*, video/*, audio/*
+columns:
+  - width: 2/3
+    sections:
+      data:
+        type: fields
+        fields:
+          metaDescription:
+            label: Beschreibung
+            type: text
+            width: 1/1
+            # help: "<code class='var-annotation'>metaDescription</code>"
+          metaLicense:
+            extends: fields/license
+            label: Lizenz
+            translate: false
+            width: 1/2
+            # help: "<code class='var-annotation'>metaLicense</code>"
+          metaAuthor:
+            label: Autor, Urheber
+            type: text
+            placeholder: "{{ site.metaAuthor }}"
+            translate: false
+            width: 1/2
+            # help: "<code class='var-annotation'>metaAuthor</code>"
+          color: 
+            label: Farbe
+            type: colors
+            width: 1/2
+            translate: false
+            alpha: false
+            contrast: false
+            # help: "<code class='var-annotation'>metaPlaceholderColor</code>"
+          # metaPlaceholderColor:   
+          metaOriginalFilename:
+            label: Ursprünglicher Dateiname
+            type: text
+            width: 1/2
+            translate: false
+            # help: "<code class='var-annotation'>metaOriginalFilename</code>"
+          metaLink:
+            label: Verlinkung
+            type: pages
+            multiple: false
+            width: 1/2
+            image: false
+            translate: false
+            empty: Keine Seite ausgewählt
+            # help: "<code class='var-annotation'>metaLink</code>"
+

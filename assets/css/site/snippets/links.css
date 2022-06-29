@@ -1,0 +1,63 @@
+/*
+ *
+ * @info Link styles
+ * @path assets/css/snippets/links.css
+ * @date 20220508
+ *
+ */
+
+a {
+  color: var(--foreground);
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: .1em;
+}
+
+a:hover {
+  --foreground: var(--highlight);
+
+  /* text-decoration: none; */
+  /* background-image: linear-gradient(to top, var(--highlight) 100%, transparent 0); */
+
+  /* padding-top: calc(var(--size-0)*(.1)); */
+  /* margin-top: calc(var(--size-0)*(-.1)); */
+
+  /* padding-inline: calc(var(--size-0)*(.2)); */
+  /* margin-inline: calc(var(--size-0)*(-.2)); */
+
+}
+
+/* a:hover::before { 
+  content: "";
+  background-color: var(--background);
+  position: absolute;
+  top: -.22em;
+  left: -.22em;
+  right: -.08em;
+  bottom: -.1em;
+  z-index: 1;
+  mix-blend-mode: multiply;
+} */
+
+a.active {
+  color: var(--background);
+  background-color: var(--foreground);
+}
+
+
+/* Fine pointers (mouse) */
+@media (pointer: fine) {}
+
+/* Coarse pointers (touch) */
+@media (pointer: coarse) {
+  nav a {
+    padding: 10px;
+  }
+}
+
+
+nav a:hover::before,
+#logoAV a:hover::before {
+  all: unset;
+  display: revert;
+}

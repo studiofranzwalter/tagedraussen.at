@@ -1,0 +1,93 @@
+/*
+ *
+ * @info Base styles
+ * @path assets/css/base.css
+ * @date 20220529
+ * 
+ */
+
+:root {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  min-height: 100%;
+  background-color: var(--background);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+*:where(:not(iframe, canvas, img, svg, video, media-controller, hls-video):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+
+html {
+  color: var(--foreground);
+  font-family: var(--primary), var(--fallback);
+  font-size: 100%;
+  font-size: var(--size-0);
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+body {}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+main {
+  --grid-template-columns: var(--space-xs) var(--space-3xs-3xl) 1fr 1fr 1fr 1fr var(--space-3xs-3xl) var(--space-xs);
+  background-color: var(--background);
+  color: var(--foreground);
+
+}
+
+main>*:not(header, aside, footer, nav) {
+  --grid-column: 2 / -2;
+}
+
+main>*:not(header, aside, footer, nav, h3) {
+  padding-bottom: var(--space-xs);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+img[data-modifier*="cover"] {
+  height: 100%;
+  object-fit: cover;
+  font-size: 0;
+  display: block;
+}
+
+::selection {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+[data-svg="clippath"] {
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+:where([hidden], [data-visibility="hidden"]) {
+  display: none;
+}
+
+main:focus {
+  outline: none;
+}

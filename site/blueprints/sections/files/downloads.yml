@@ -1,0 +1,20 @@
+#
+# @info File section for downloadable files
+# @path site/blueprints/sections/files/downloads.yml
+# @date 20220515
+#
+
+empty: Keine Dateien 
+headline: 
+  de: Downloads
+image: false
+info: "{{ file.nicesize}}"
+layout: list
+parent: page.children.find('media')
+sortable: false
+template: download
+text: "{{ file.name }}.{{ file.extension }}"
+translate: false
+type: files
+uploads:
+  template: download

@@ -1,0 +1,21 @@
+#
+# @info User blueprint for the editor role
+# @path site/blueprints/users/admin.yml
+# @date 20220508
+#
+
+title: Editor
+
+permissions:
+  access:
+    panel: true
+    site: true
+    settings: false
+
+fields:
+  info:
+    label:
+    type: info
+    theme: positive
+    text: |
+      In den __Einstellungen__ können Name, E-Mail, Passwort und Sprache des Panels geändert werden.

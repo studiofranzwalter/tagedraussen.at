@@ -1,0 +1,11 @@
+#
+# @info Original fielname field
+# @path site/blueprints/fields/original-filename.yml
+# @date 20220515
+#
+
+label: 
+  de: Ursprünglicher Dateiname
+help: "<code contenteditable>->originalFilename()</code>"
+translate: false
+type: text

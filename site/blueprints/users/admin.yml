@@ -1,0 +1,26 @@
+#
+# @info User blueprint for the admin role
+# @path site/blueprints/users/admin.yml
+# @date 20220508
+#
+
+title: Admin
+
+permissions:
+  # access:
+  #   panel: true
+  #   site: true
+  #   settings: true
+
+fields:
+  info:
+    label:
+    type: info
+    theme: neutral
+    text: |
+      In den __Einstellungen__ können Name, E-Mail, Passwort und Sprache des Panels geändert werden.
+  # colorextractor:
+    # type: janitor
+    # label: Extract missing colors
+    # progress: 'Processing…'
+    # job: extractColors

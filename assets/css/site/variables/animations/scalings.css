@@ -1,0 +1,28 @@
+/*
+ *
+ * @info Scaling animations
+ * @path assets/css/animations/fades.css
+ * @date 20220403
+ *
+ */
+
+[data-animation*="scale-down"] {
+
+  --animation-duration: 2s;
+  --animation-delay: 2s;
+  --animation-repeat: 1;
+
+  animation-name: scale-down;
+
+}
+
+@keyframes scale-down {
+
+  0% {
+    transform: none;
+  }
+
+  100% {
+    transform: scale(.9, .9);
+  }
+}

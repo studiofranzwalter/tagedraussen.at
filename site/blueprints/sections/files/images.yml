@@ -1,0 +1,23 @@
+#
+# @info File section for image files blueprints
+# @path site/blueprints/sections/files/media.yml
+# @date 20220515
+# 
+#
+
+empty: Keine Bild-Dateien
+headline:
+  de: Bilder, Fotos, Grafiken
+  en: Media files
+info: "{{ file.dimensions }}, {{ file.nicesize }}"
+layout: cardlets
+limit: 100
+parent: page.children.find('media')
+size: medium
+sortable: false
+template: image
+text: "{{ file.name }}"
+translate: false
+type: files
+uploads:
+  template: image

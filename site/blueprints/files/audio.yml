@@ -1,0 +1,22 @@
+#
+# @info File blueprint for audio files
+# @path site/blueprints/files/audio.yml
+# @date 20220515
+#
+
+accept:
+  mime: audio/*
+columns:
+  - width: 1/1
+    sections:
+      data:
+        type: fields
+        fields:
+          description:
+            extends: fields/description
+            placeholder: "{{ file.name }}"
+          license: 
+            extends: fields/license
+          originalFilename:
+            extends: fields/original-filename
+            

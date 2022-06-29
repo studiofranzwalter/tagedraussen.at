@@ -1,0 +1,80 @@
+#
+# @info Banner field
+# @path site/blueprints/fields/banner.yml
+# @date 20220506
+#
+
+type: group
+fields:
+  bannerType:
+    default: logo
+    help: "<code contenteditable>->bannerType()</code>"
+    label: 
+      de: Banner-Typ
+      en: Banner type   
+    options:
+      logo:
+        text: Schriftzug
+      image:
+        text: Schriftzug + Bild
+      video:
+        text: Schriftzug + Video
+    type: radio
+    width: 1/1
+
+  bannerImage:
+    extends: fields/image
+    help: "<code contenteditable>->bannerImage()</code>"
+    label: 
+      de: Bild
+      en: Image
+    # translate: true    
+    when:
+      bannerType: image
+
+  bannerVideo:
+    extends: fields/video
+    label: Video
+    type: pages
+    width: 1/2
+    query: kirby.collection('shared/videos')
+    max: 1
+    subpages: false
+    multiple: false
+    layout: cardlets
+    empty: "Kein Video ausgewählt"
+    text: "{{ page.title }}"
+    help: <code contenteditable>->bannerVideo()</code>
+    image: 
+      query: page.poster.toFile
+    when:
+      bannerType: video
+
+  bannerVideoPoster:
+    label: Poster
+    type: files
+    multiple: false
+    layout: cardlets
+    empty: "Standard verwenden"
+    query: page.children.find('media').images
+    template: media
+    width: 1/2
+    image: 
+      # back: white
+      cover: false
+    help: "<code contenteditable>->bannerVideoPoster()</code>"
+    uploads:
+      parent: page.children.find('media')
+      template: media
+    when:
+      bannerType: video
+
+  bannerCaption:
+    type: writer
+    marks:
+      - link
+    inline: true
+    label: Unterschrift 
+    help: "<code contenteditable>->bannerCaption()</code>"
+    whenQuery: bannerType != 'logo'   
+      

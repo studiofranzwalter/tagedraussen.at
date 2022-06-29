@@ -1,0 +1,38 @@
+#
+# @info Quote block
+# @path site/blueprints/blocks/quote.yml
+# @date 20220515
+#
+
+name:
+  de: Zitat
+  en: Quote
+icon: chat
+wysiwyg: true
+preview: quote
+
+fields:
+  text:
+    label: 
+      de: Zitat
+      en: Quote
+    placeholder:
+      de: Zitat
+      en: Quote
+    type: writer
+    inline: true
+    icon: false
+  citation:
+    label:
+      de: Quelle
+      en: Source
+    placeholder: 
+      de: Quelle
+      en: Source
+    type: writer
+    inline: true
+    icon: false
+
+  background: fields/background
+  foreground: fields/foreground
+  animation: fields/animation

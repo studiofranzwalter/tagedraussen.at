@@ -1,0 +1,55 @@
+#
+# @info Extended tab
+# @path site/blueprints/tabs/extended.yml
+# @date 20220508
+#
+
+label: 
+  de: Meta
+  en: Meta
+
+icon: tag
+
+fields: 
+
+  metaTitle:
+    label: Meta-Titel
+    type: text
+    placeholder: "{{page.title}}"
+    help: <code contenteditable>->metaTitle()</code></code>
+    width: 1/2
+
+  metaAuthor:
+    label: Meta-Autor
+    type: text
+    placeholder: "{{site.metaauthor}}"
+    help: <code contenteditable>->metaAuthor()</code></code>
+    width: 1/2
+
+  metaDescription:
+    label: Meta-Beschreibung
+    placeholder: "{{page.subheading}}"
+    type: text
+    buttons: false
+    width: 1/2
+    help: <code contenteditable>->metaDescription()</code></code>
+  
+  metaImage: 
+    extends: fields/image
+    label: Meta-Image
+    help: <code contenteditable>->metaImage()</code></code>
+    width: 1/2
+
+  metaRobots:
+    label: Robots
+    type: text
+    placeholder: "follow, index"
+    width: 1/2
+    help: <code contenteditable>->metaRobots()</code></code>
+
+  metaKeywords:
+    label: Zusätzliche Keywords
+    type: tags
+    icon: false
+    width: 1/2
+    help: "<code contenteditable>->metaKeywords()</code><br><br>Ergänzend zu den Standard-Keywords:<br><br><code>{{site.metaKeywords}}</code>"

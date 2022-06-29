@@ -1,0 +1,63 @@
+#
+# @info Default page blueprint
+# @path site/blueprints/pages/default.yml
+#
+
+title: Default
+icon: page
+
+options:
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  changeTitle: true
+  delete: false
+  duplicate: false
+  hideStatus: true
+  preview: true
+  read: true
+  update: true
+
+status: statuses/default
+
+num: zero
+
+subpages:
+  - title: Media
+    uid: media
+    template: media
+
+tabs:
+  content: 
+    icon: edit
+    label: Inhalt
+    columns: 
+      - width: 2/3
+        sections:
+          content: 
+            type: fields
+            fields:
+              subheading: fields/subheading
+              contents: fields/contents
+          subpages:
+            headline: Unterseiten
+            type: pages
+            text: "{{ page.title }}"
+            template: films.item
+            layout: cardlets
+            info: "↻ {{ page.modified('d.m.Y') }}"
+            image:
+              back: "#007956"
+              color: "#FFFFFF"
+              icon: "video"
+              query: false
+          punctuation: sections/punctuation-helper
+      - width: 1/3  
+        sticky: true
+        fields: 
+          banner: fields/banner
+
+  teaser: tabs/teaser
+  media: tabs/media
+  meta: tabs/meta
+  # settings: tabs/settings

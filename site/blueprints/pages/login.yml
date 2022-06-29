@@ -1,0 +1,53 @@
+#
+# @info Default page blueprint
+# @path site/blueprints/pages/default.yml
+#
+
+title: Default
+icon: page
+
+options:
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  changeTitle: true
+  delete: false
+  duplicate: false
+  hideStatus: true
+  preview: true
+  read: true
+  update: true
+
+status: statuses/default
+
+num: zero
+
+tabs:
+  content:
+    icon: edit
+    label: Inhalt
+    columns: 
+      - width: 3/4
+        sections:
+          content: 
+            type: fields
+            fields:
+              subheading: fields/subheading
+              contents: fields/contents
+          punctuation: sections/punctuation-helper
+      - width: 1/4  
+        sticky: true
+        fields: 
+          bannerType:
+            default: empty
+            help: "<code contenteditable>->bannerType()</code>"
+            label: 
+              de: Banner-Typ
+              en: Banner type   
+            options:
+              logo:
+                text: Schriftzug
+            type: radio
+            width: 1/1
+
+  # meta: tabs/meta

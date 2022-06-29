@@ -1,0 +1,17 @@
+#
+# @info Subheading field
+# @path site/blueprints/fields/subheading.yml
+# @date 20220515
+#
+
+label: 
+  de: Einleitung
+  en: Subheading
+type: writer
+inline: true
+counter: false
+width: 1/1
+marks:
+  - link
+  - underline
+help: "<code contenteditable>->subheading()</code><br>Silben und Wörter können mit (​+​) und (​-​) ergänzt werden."

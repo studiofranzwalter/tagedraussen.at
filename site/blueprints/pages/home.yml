@@ -1,0 +1,26 @@
+#
+# @info Homepage blueprint
+# @path site/blueprints/pages/home.yml
+#
+
+title: Homepage
+icon: home
+options:
+  options:
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  changeTitle: true
+  delete: false
+  duplicate: false
+  hideStatus: true
+  preview: true
+  read: true
+  update: true
+status: statuses/default
+
+tabs:
+  content: tabs/content
+  media: tabs/media
+  meta: tabs/meta
+  # settings: tabs/settings

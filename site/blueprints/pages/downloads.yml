@@ -1,0 +1,44 @@
+#
+# @info Downloads blueprint
+# @path site/blueprints/pages/downloads.yml
+# @date 20220511
+#
+
+title: 
+  en: Downloads
+  de: Downloads
+
+# icon: page
+
+options:
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  changeTitle: false
+  delete: true
+  duplicate: false
+  hideStatus: true
+  preview: false
+  read: true
+  update: true
+
+status: statuses/restricted
+
+num: zero
+
+sections: 
+  media: 
+    headline: 
+      de: Downloads
+      en: Downloads
+    info: "{{ file.dimensions }}"
+    layout: cards
+    limit: 100
+    size: tiny
+    sortable: false
+    template: downloads
+    text: "{{ file.name }}"
+    translate: false
+    type: files
+    image: 
+      back: white

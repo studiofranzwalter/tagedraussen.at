@@ -1,0 +1,24 @@
+#
+# @info 
+# @path site/blueprints/
+# @date 20220508
+#
+
+type: punctuation
+label: Interpunktionshilfe
+fieldsets:
+  - category:
+    label:
+      de: Zeichen
+    chars:
+      - "„"
+      - "‚"
+      - "‘"
+      - "“"
+      - "“"
+      - "‘"
+      - "’"
+      - "”"
+      - "’"
+      - "–"
+      - "…"

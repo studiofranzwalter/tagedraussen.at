@@ -1,0 +1,171 @@
+#
+# @info Countries select field (sorted A-Z in German)
+# @path site/blueprints/fields/countries.yml
+# @date 20220515
+#
+
+label: Land
+type: select
+empty: Land auswählen
+default: de
+options:
+  ar:
+    en: Argentina
+    de: Argentinien
+  au:
+    en: Australia
+    de: Australien
+  by:
+    en: Belarus
+    de: Belarus
+  be:
+    en: Belgium
+    de: Belgien
+  ba:
+    en: Bosnia and Herzegovina
+    de: Bosnien und Herzegowina
+  br:
+    en: Brazil
+    de: Brasilien
+  bg:
+    en: Bulgaria
+    de: Bulgarien
+  cl:
+    en: Chile
+    de: Chile
+  cn:
+    en: China
+    de: China
+  dk:
+    en: Denmark
+    de: Dänemark
+  de:
+    en: Germany
+    de: Deutschland
+  ee:
+    en: Estonia
+    de: Estland
+  fi:
+    en: Finland
+    de: Finnland
+  fr:
+    en: France
+    de: Frankreich
+  ge:
+    en: Georgia
+    de: Georgien
+  gr:
+    en: Greece
+    de: Griechenland
+  ie:
+    en: Ireland
+    de: Irland
+  is:
+    en: Iceland
+    de: Island
+  il:
+    en: Israel
+    de: Israel
+  it:
+    en: Italy
+    de: Italien
+  jp:
+    en: Japan
+    de: Japan
+  ca:
+    en: Canada
+    de: Kanada
+  kg:
+    en: Kyrgyzstan
+    de: Kirgisistan
+  co:
+    en: Colombia
+    de: Kolumbien
+  hr:
+    en: Croatia
+    de: Kroatien
+  lv:
+    en: Latvia
+    de: Lettland
+  lt:
+    en: Lithuania
+    de: Litauen
+  lu:
+    en: Luxembourg
+    de: Luxemburg
+  ma:
+    en: Morocco
+    de: Marokko
+  mx:
+    en: Mexico
+    de: Mexiko
+  np:
+    en: Nepal
+    de: Nepal
+  nz:
+    en: New Zealand
+    de: Neuseeland
+  nl:
+    en: Netherlands
+    de: Niederlande
+  no:
+    en: Norway
+    de: Norwegen
+  at:
+    en: Austria
+    de: Österreich
+  pe:
+    en: Peru
+    de: Peru
+  pl:
+    en: Poland
+    de: Polen
+  pt:
+    en: Portugal
+    de: Portugal
+  ro:
+    en: Romania
+    de: Rumänien
+  ru:
+    en: Russian Federation
+    de: Russland
+  se:
+    en: Sweden
+    de: Schweden
+  ch:
+    en: Switzerland
+    de: Schweiz
+
+  rs:
+    en: Serbia
+    de: Serbien
+  sk:
+    en: Slovakia
+    de: Slowakei
+  si:
+    en: Slovenia
+    de: Slowenien
+  es:
+    en: Spain
+    de: Spanien
+  kr:
+    en: Korea
+    de: Südkorea
+  za:
+    en: South Africa
+    de: Süfafrika
+  cz:
+    en: Czechia
+    de: Tschechien
+  tr:
+    en: Turkey
+    de: Türkei
+  hu:
+    en: Hungary
+    de: Ungarn
+  us:
+    en: United States of America
+    de: Vereinigte Staaten
+  gb:
+    en: United Kingdom of Great Britain and Northern Ireland
+    de: Vereinigtes Königreich

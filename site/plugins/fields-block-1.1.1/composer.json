@@ -1,0 +1,14 @@
+{
+  "name": "jg/kirby-fields-block",
+  "description": "Kirby Fields Block",
+  "type": "kirby-plugin",
+  "license": "MIT",
+  "version": "1.1.1",
+  "homepage": "https://github.com/jongacnik/kirby-fields-block",
+  "authors": [
+    {
+      "name": "Jon Gacnik",
+      "email": "jon@folderstudio.com"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+/* hide language dropdown */
+.k-panel.singleLanguage .k-languages-dropdown {
+  display: none !important;
+}
+
+/* hide settings dropdown */
+.k-panel.hideSettings .k-site-view-options,
+.k-panel.hideSettings .k-page-view-options,
+.kpanel.hideSettings .k-user-view-options,
+.k-item.hideSettings .k-item-options-dropdown
+{
+  display: none !important;
+}
+
+/* hide status flag */
+.k-panel.hideStatus header .k-status-icon, /* top menu */
+.k-item.hideStatus .k-button.k-status-icon
+{
+  display: none !important;
+}
+
+/* hide header buttons */
+.k-panel.hideOptions .k-bar.k-header-buttons {
+  display: none !important;
+}

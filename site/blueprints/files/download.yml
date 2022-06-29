@@ -1,0 +1,32 @@
+#
+# @info Downloads blueprint
+# @path site/blueprints/files/downloads.yml
+#
+
+columns:
+  - width: 2/3
+    sections:
+      data:
+        type: fields
+        fields:
+          description:
+            label: 
+              de: Beschreibung
+            type: text
+            width: 1/1
+            help: "<code contenteditable>->description()</code>"
+          license:
+            extends: fields/license
+            label: 
+              de: Lizenz
+            translate: false
+            width: 1/2
+            help: "<code contenteditable>->license()</code>"
+          author:
+            label: 
+              de: Autor, Urheber
+            type: text
+            placeholder: "{{ site.metaAuthor }}"
+            translate: false
+            width: 1/2
+            help: "<code contenteditable>->author()</code>"

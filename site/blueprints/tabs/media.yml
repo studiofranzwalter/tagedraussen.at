@@ -1,0 +1,19 @@
+#
+# @info Media (files) tab
+# @path site/blueprints/tabs/media.yml
+# @date 20220602
+#
+
+label:
+  de: Dateien
+  en: Files
+
+icon: archive # import
+
+columns:
+  - width: 1/1
+    sections:
+      images: sections/files/images
+      videos: sections/files/videos
+      audio: sections/files/audios
+      downloads: sections/files/downloads

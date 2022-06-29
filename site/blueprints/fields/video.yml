@@ -1,0 +1,22 @@
+#
+# @info Video field
+# @path site/blueprints/fields/video.yml
+# @date 20220515
+#
+
+help: "<code contenteditable>->image()</code>" 
+# image: 
+#   cover: false
+#   back: transparent
+info: "{{ file.dimensions }}, {{ file.niceSize }}"
+label: 
+  de: Bild
+layout: cardlets
+query: page.children.find('media').files.filterBy('template', 'image')
+sortable: false
+text: "{{ file.name }}"
+translate: true
+type: files
+uploads: 
+  parent: page.children.find('media')
+  template: image

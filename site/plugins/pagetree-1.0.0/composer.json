@@ -1,0 +1,13 @@
+{
+    "name": "getkirby/pagetree",
+    "type": "kirby-plugin",
+    "version": "1.0.0",
+    "homepage": "https://getkirby.com/docs/cookbook/extensions/subpage-builder",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sonja Broda",
+            "email": "mail@getkirby.com"
+        }
+    ]
+}

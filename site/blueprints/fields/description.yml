@@ -1,0 +1,15 @@
+#
+# @info Description field
+# @path site/blueprints/fields/description.yml
+# @date 20220515
+#
+
+label: 
+  de: Beschreibung
+type: writer
+marks: 
+  - link
+  - email
+inline: true
+width: 1/1
+help: "<code contenteditable>->description()</code>"

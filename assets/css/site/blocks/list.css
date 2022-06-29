@@ -1,0 +1,11 @@
+/*
+ *
+ * @info List block
+ * @path assets/css/blocks/list.css
+ * @date 20220510
+ *
+ */
+
+[data-block="list"] {
+  --grid-column: 3 / -3;
+}

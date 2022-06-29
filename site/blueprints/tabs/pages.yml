@@ -1,0 +1,23 @@
+#
+# @info Pages tab
+# @path site/blueprints/tabs/pages.yml
+# @date 20220519
+#
+
+label:
+  de: Unterseiten
+  en: Subpages
+
+icon: page
+
+columns:
+  - width: 1/1
+    sections:
+      entries:
+        headline: Unterseite
+        type: pages
+        image: false
+        info: '{{ page.subheading }}'
+        layout: cardlets
+        text: "{{ page.title }}"
+        template: engagement.item

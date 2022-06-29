@@ -1,0 +1,34 @@
+#
+# @info German language variables
+# @path site/languages/de.yml
+# @date 20220621
+#
+
+aac:              Österreichischer Alpenverein
+aayc:             Alpenvereinsjugend
+close:            Schließen
+codeIncorrect:    Das Passwort war nicht korrekt.
+contact:          Kontakt
+downloadFile:     Datei herunterladen 
+fileSize:         Dateigröße
+goBackHome:       Zurück zur Startseite
+goToTop:          Zum Seitenbeginn
+homepage:         Start
+information:      Informationen
+langCode:         de
+langName:         Deutsch
+menu:             Inhalt
+more:             mehr
+nav:              Navigation
+next:             Weiter
+oeavjugend:       Alpenvereinsjugend
+open:             Öffnen
+prev:             Zurück
+readOn:           Weiterlesen
+relatedLinks:     Weiterführende Links
+skipNavigation:   Navigation überspringen
+skipToMain:       Weiter zum Inhalt
+socialMedia:      Social Media
+website:          Webseite
+websiteInEnglish: Webseite auf Englisch
+websiteInGerman:  Webseite auf Deutsch

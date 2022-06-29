@@ -1,0 +1,35 @@
+/*
+ *
+ * @info AVJ logo
+ * @path assets/css/snippets/aside.css
+ * @date 20220508
+ *
+ */
+
+aside {
+  --grid-column: 1 / -1;
+  --grid-row: 1 / 1;
+  background-color: var(--background);
+  color: var(--foreground);
+  padding-block: var(--space-3xs);
+  padding-inline: var(--space-xs);
+  justify-content: end;
+}
+
+aside a {
+  /* margin-left: auto; */
+  /* text-align: right; */
+  width: clamp(10rem, 100%, 15rem);
+  padding-block: var(--space-2xs);
+  transition: all .5s ease;
+}
+
+aside a:hover {
+  opacity: .2;
+  transform: scale(.97);
+}
+
+aside img {
+  display: flex;
+  filter: grayscale(100%) opacity(.95) brightness(2.9);
+}

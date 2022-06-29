@@ -1,0 +1,22 @@
+#
+# @info License field
+# @path site/blueprints/fields/license.yml
+# @date 20220515
+#
+
+default: copyright
+# empty: false
+help: "<code contenteditable>->license()</code>"
+label:
+  de: Lizenz
+  en: License
+options:
+  - value: "copyright"
+    text: © All rights reserved
+  - value: "cc-by-nc"
+    text: CC BY-NC 4.0
+  - value: "cc-by-sa"
+    text: CC BY-SA 4.0
+translate: false
+type: select
+  

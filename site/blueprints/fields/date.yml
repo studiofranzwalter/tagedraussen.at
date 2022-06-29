@@ -1,0 +1,11 @@
+#
+# @info Date field
+# @path site/blueprints/fields/date.yml
+# @date 20220515
+#
+
+label: Datum
+type: date
+time: false
+display: DD.MM.YYYY
+# default: today

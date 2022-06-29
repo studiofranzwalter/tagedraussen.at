@@ -1,0 +1,10 @@
+#
+# @info Children/subpages tab
+# @path site/blueprints/tabs/children.yml
+# @date 20220603
+#
+
+label:
+  de: Unterseiten
+  en: Subpages
+icon: layers

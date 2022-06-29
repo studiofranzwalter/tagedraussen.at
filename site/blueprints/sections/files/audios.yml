@@ -1,0 +1,20 @@
+#
+# @info File section for audio files
+# @path site/blueprints/sections/files/audios.yml
+# @date 20220515
+#
+
+empty: Keine Audio-Dateien
+label: 
+  de: Audio
+image: false
+info: "{{ file.nicesize}}"
+layout: list
+parent: page.children.find('media')
+sortable: false
+template: audio
+text: "{{ file.name }}.{{ file.extension }}"
+translate: false
+type: files
+uploads:
+  template: audio

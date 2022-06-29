@@ -1,0 +1,21 @@
+/*
+ *
+ * @info Download block
+ * @path assets/css/blocks/download.css
+ * @date 20220628
+ *
+ */
+
+[data-block *="download"] {
+  --grid-column: 3 / -3;
+  --grid-template-columns: 1fr;
+}
+
+[data-block *="download"] li {
+  /* color: var(--beach-darkest); */
+  list-style-type: none;
+}
+
+[data-block *="download"] li:not(:last-of-type) {
+  margin-bottom: var(--space-xs);
+}

@@ -1,0 +1,55 @@
+#
+# @info Gallery block 
+# @path site/blueprints/blocks/gallery.yml
+# @date 20220515
+#
+# @docs https://getkirby.com/docs/reference/panel/blocks/gallery
+#
+
+name: Bildergalerie
+icon: layers
+preview: gallery
+
+fields:
+  images:
+    empty: field.blocks.gallery.images.empty
+    image:
+      back: transparent
+      ratio: 3/2
+    label: field.blocks.gallery.images.label
+    layout: cards
+    multiple: true
+    query: page.children.find('media')
+    size: tiny
+    type: files
+    uploads:
+      template: image
+      parent: page.children.find('media')
+
+  author:
+    label: Urheber aller Fotos der Galerie
+    type: text
+    placeholder: "{{site.metaAuthor}}"
+    translate: false
+    width: 1/2
+    help: "<code class='var-annotation'>author</code>"
+  aspectRatio:
+    label: field.blocks.image.ratio
+    type: select
+    placeholder: Original
+    width: 1/2
+    help: "<code class='var-annotation'>aspectRatio</code>"
+    options:
+      1/1: "1:1"
+      2/3: "2:3"
+      3/2: "3:2"
+      4/3: "4:3"
+      16/9: "16:9"
+  caption:
+    label: field.blocks.image.caption
+    type: writer
+    icon: text
+    inline: true
+    width: 1/2
+    help: "<code class='var-annotation'>caption</code>"
+      

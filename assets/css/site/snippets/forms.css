@@ -1,0 +1,19 @@
+/*
+ *
+ * @info Form styles
+ * @path assets/css/snippets/forms.css
+ * @date 20220505
+ * 
+ */
+
+input,
+textarea,
+button {
+  font-size: inherit;
+  font-family: inherit;
+
+}
+
+textarea {
+  white-space: revert;
+}

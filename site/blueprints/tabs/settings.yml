@@ -1,0 +1,10 @@
+#
+# @info Settings tab
+# @path site/blueprints/tabs/settings.yml
+# @date 20220509
+#
+
+icon: settings
+label: 
+  de: Einstellungen
+  en: Settings

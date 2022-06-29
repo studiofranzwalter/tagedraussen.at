@@ -1,0 +1,54 @@
+#
+# @info Video block
+# @path site/blueprints/blocks/video.yml
+# @date 20220515
+#
+
+name: field.blocks.video.name
+icon: video
+preview: fields
+label: false
+fields:
+  # url:
+  #   label: field.blocks.video.url.label
+  #   type: url
+  #   placeholder: field.blocks.video.url.placeholder
+  # caption:
+  #   label: field.blocks.video.caption
+  #   type: writer
+  #   inline: true
+
+  videoPage:
+    label: Video
+    type: pages
+    width: 1/2
+    query: kirby.collection('shared/videos')
+    max: 1
+    subpages: false
+    multiple: false
+    layout: cards
+    empty: "Kein Video ausgewählt"
+    text: "{{ page.title }}"
+    help: "<code contenteditable>->videoPage()</code>"
+    size: small
+    image: 
+      query: page.poster.toFile
+      ratio: 16/9
+
+  poster: 
+    label: Individuelle Poster-Grafik
+    type: files
+    multiple: false
+    layout: cards
+    size: tiny
+    empty: "Keine Datei ausgewählt"
+    query: page.children.find('media').images
+    template: media
+    size: small
+    image: 
+      ratio: 16/9
+    help: "<code contenteditable>->poster()</code>"
+    width: 1/2
+    uploads:
+      parent: page.children.find('media')
+      template: media

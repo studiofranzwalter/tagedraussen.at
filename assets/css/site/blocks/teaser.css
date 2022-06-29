@@ -1,0 +1,69 @@
+/*
+ *
+ * @info Teaser block
+ * @path assets/css/snippets/teaser.css
+ * @date 20220510
+ * 
+ */
+
+[data-block="teaser"] {
+  --grid-column: 3 / -3;
+  --gap: var(--space-xs);
+  --highlight: var(--green);
+  padding-top: calc(var(--space-s-m) - var(--space-xs));
+  padding-bottom: calc(var(--space-s-m));
+  align-content: start;
+}
+
+@media (min-width: 35.625rem) {
+  [data-block="teaser"] {
+    --grid-column: 2 / -2;
+  }
+}
+
+[data-block="teaser"] a {
+  --grid-template-columns: 1fr;
+  --grid-template-rows: 1fr auto-fit 1fr;
+  text-decoration: none;
+  background-color: var(--background);
+  width: min(100%, 25rem);
+  justify-self: center;
+}
+
+[data-block="teaser"] h3 {
+  /* color: var(--highlight); */
+  transition: all 120ms ease-in-out;
+  padding-top: var(--space-xs);
+  margin-block: 0;
+  font-size: var(--size-1);
+  font-family: var(--secondary);
+}
+
+[data-block="teaser"] figure {
+  box-shadow: .25rem .25rem 0px 0px var(--highlight);
+  transition: all 0.4s;
+}
+
+[data-block="teaser"] a:hover {
+  --background: var(--green);
+  --foreground: var(--white);
+  --highlight: var(--white);
+  /* transform: translate(.25rem, .25rem); */
+  outline: solid 10px var(--background);
+}
+
+[data-block="teaser"] a:hover figure {
+  /* transform: scale(.98); */
+  /* filter: saturate(1) contrast(1) opacity(1); */
+  box-shadow: none;
+}
+
+[data-block="teaser"] a:hover {}
+
+[data-block="teaser"]>a {}
+
+[data-block="teaser"] img {
+  aspect-ratio: 16/9;
+  /* -webkit-clip-path: url(#media-frame); */
+  /* clip-path: url(#media-frame); */
+}

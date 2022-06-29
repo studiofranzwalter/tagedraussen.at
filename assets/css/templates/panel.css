@@ -1,0 +1,212 @@
+/*
+ *
+ * @info Additional styles for the Kirby panel
+ * @path assets/css/panel/panel.css
+ * @date 20220427
+ *
+ */
+
+/*----------  Overall Panel adjustments  ----------*/
+
+.blueprint__file-size {
+  text-transform: uppercase;
+}
+
+
+.k-drawer-box {
+  /* flex-basis: max(80em, 50vw); */
+  flex-basis: 65em;
+}
+
+.k-field[data-disabled] {
+  opacity: 0.35;
+}
+
+.k-site-view .k-section-name-spotlight .k-button.k-status-icon {
+  display: none !important;
+}
+
+/*----------  Display field/section names for admins  ----------*/
+
+/* [data-theme="help"] {
+  position: relative;
+  display: block;
+} */
+
+[data-theme="help"] p code {
+  background-color: rgba(194, 204, 204, 0.562);
+  background-color: var(--color-gray-300);
+  color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.3rem;
+  padding-inline: .65em;
+  padding-block: .15em;
+  font-size: 70%;
+  display: inline-block;
+  transform: translateY(-.25em);
+
+}
+
+/* [data-theme="help"] p code::before {
+  content: "→"
+} */
+
+/* [data-theme="help"] p code::after {
+  content: "()"
+} */
+
+[data-role="user"] .k-field-help code,
+[data-role="user"] .k-collection-help code {
+  display: none;
+}
+
+
+/*----------  Blocks  ----------*/
+
+/* Fix font size in quotes (quote block) */
+.k-block-quote-text {
+  font-size: 1rem;
+  line-height: 1.75;
+  padding-bottom: 0.25rem;
+}
+
+.k-block-figure-container img,
+.k-block-type-gallery li img {
+  max-height: 40vh;
+}
+
+
+/*----------  Dashboard adjustments  ----------*/
+
+/* Reduce padding for these sections; they have no title */
+.k-section-name-home,
+section.k-section-name-core,
+section.k-section-name-addons {
+  padding-bottom: 0;
+}
+
+/* Hide all options for the homepage section */
+section.k-section-name-home .k-list-item-options,
+section.k-section-name-core .k-list-item-options,
+section.k-section-name-addons .k-list-item-options,
+section.k-section-name-misc .k-list-item-options {
+  display: none;
+}
+
+
+
+/*----------  Additional blocks styles  ----------*/
+
+/*
+Subheadings for various blocks (paragraph, flag, collapsible)
+*/
+
+.k-block-type-subheading {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.k-block-type-subheading[data-empty]::after {
+  content: "No subheading";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.k-panel[data-translation="de"] .k-block-type-heading-input[data-empty]::after {
+  content: "Keine Zwischenüberschrift";
+}
+
+.k-block-type-subheading .ProseMirror>* {
+  color: #191919;
+  display: inline-block;
+}
+
+.k-block-type-subheading .ProseMirror a {
+  color: inherit;
+}
+
+/*
+Block annotations
+*/
+
+.k-block-container .var-annotation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0;
+  /* display: none; */
+}
+
+/*----------    ----------*/
+
+[dir="ltr"] .k-block-type-quote-editor {
+  border-left-width: 0em;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.k-block-type-quote-text {
+  font-size: var(--text-l);
+  line-height: 1.5em;
+}
+
+/*----------    ----------*/
+
+
+.k-field-name-cssinline .k-structure-table-text,
+.k-field-name-cssinline input {
+  font-family: monospace;
+  font-size: 90%;
+  opacity: 0.85;
+}
+
+/* Heading Block (common font size) */
+.k-block-type-heading-input {
+  font-size: 1.15rem !important;
+}
+
+
+/*----------  2022-05-10  ----------*/
+
+[class*="k-block-container-type"]::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.2rem 0.35rem;
+  font-size: 65%;
+  transform-origin: top right;
+  background-color: var(--color-gray-300);
+  color: var(--color-gray-500);
+  border-bottom-left-radius: 0.3rem;
+}
+
+.k-block-container-type-text::after {
+  content: "Text";
+}
+
+.k-block-container-type-video::after {
+  content: "video";
+}
+
+.k-block-container-type-gallery::after {
+  content: "galerie";
+}
+
+.k-block-container-type-teaser::after {
+  content: "Teaser";
+}
+
+.k-block-container-type-quote::after {
+  content: "Zitat";
+}
+
+.k-block-container-type-heading::after {
+  content: "Überschrift";
+}
+
+.k-block-container-type-list::after {
+  content: "Liste";
+} 

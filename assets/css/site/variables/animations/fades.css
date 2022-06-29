@@ -1,0 +1,26 @@
+/*
+ *
+ * @info Fading animations
+ * @path assets/css/animations/fades.css
+ * @date 20220623
+ *
+ */
+
+[data-animation*="fade-in"] {
+  --animation-duration: 750ms;
+  --animation-delay: 350ms;
+  --animation-repeat: 1;
+  --animation-function: var(--ease-in-out-quad);
+  animation-name: fade-in;
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,34 @@
+#
+# @info English language variables
+# @path site/languages/en.yml
+# @date 20220621
+#
+
+aac:              Austrian Alpine Club
+aayc:             Austrian Alpine Youth Club
+close:            Close
+codeIncorrect:    This code is incorrect.
+contact:          Contact
+downloadFile:     Download file
+fileSize:         File size
+goBackHome:       Back to the homepage
+goToTop:          Back to top
+homepage:         Homepage
+information:      Information
+langCode:         en
+langName:         English
+menu:             Menu
+more:             more
+nav:              Navigation
+next:             Next
+oeavjugend:       Austrian Alpine Youth Club
+open:             Open
+prev:             Prev
+readOn:           Read on
+relatedLinks:     Related links
+skipNavigation:   Skip navigation
+skipToMain:       Skip to main content
+socialMedia:      Social Media
+website:          Website
+websiteInEnglish: Website in English
+websiteInGerman:  Website in German

@@ -1,0 +1,53 @@
+#
+# @info Media blueprint
+# @path site/blueprints/pages/media.yml
+# @date 20220515
+#
+
+title: 
+  en: Media
+  de: Medien
+
+icon: import
+
+options:
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  changeTitle: false
+  delete: true
+  duplicate: false
+  hideStatus: true
+  preview: false
+  read: true
+  update: true
+
+status: statuses/restricted
+
+num: zero
+
+sections: 
+  images: 
+    extends: sections/files/images
+    parent: page
+    uploads:
+      parent: page.children.find('media')
+      template: image
+  videos: 
+    extends: sections/files/videos
+    parent: page
+    uploads:
+      parent: page.children.find('media')
+      template: video
+  audios: 
+    extends: sections/files/audios
+    parent: page
+    uploads:
+      parent: page.children.find('media')
+      template: audio
+  downloads: 
+    extends: sections/files/downloads
+    parent: page
+    uploads:
+      parent: page.children.find('media')
+      template: download

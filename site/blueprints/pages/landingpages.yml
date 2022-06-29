@@ -1,0 +1,59 @@
+#
+# @info Landingpages blueprint
+# @path site/blueprints/pages/landingpags.yml
+# @date 20220404
+#
+
+title: Landingpages
+icon: page
+
+options:
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  changeTitle: false
+  delete: false
+  duplicate: false
+  hideStatus: true
+  preview: falses
+  read: true
+  update: true
+
+status: statuses/restricted
+
+num: zero
+
+tabs:
+  content: 
+    icon: edit
+    label: Inhalt
+
+    columns:
+      - width: 1/1
+        fields:
+          heading: 
+            label: Überschrift
+            type: text
+            marks: false
+            inline: true
+            placeholder: "{{ page.title }}"
+            counter: false
+            width: 1/1
+            disabled: true
+            # help: "Kann mit &&shy;nbsp; und &&shy;shy; optimiert werden."
+
+      - width: 1/1
+        sections: 
+          entries:
+            headline: " "
+            type: pages
+            text: "{{ page.title }}"
+            template: landingpages.item
+            layout: cardlets
+            info: "↻ {{ page.modified('%d.%m.%Y') }}"
+            image:
+              back: "#007956"
+              color: "white"
+              icon: "road-sign"
+              query: false
+

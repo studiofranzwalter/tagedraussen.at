@@ -1,0 +1,22 @@
+User-agent: *
+
+Disallow: /assets/
+
+Disallow: /media/
+Disallow: /**/media/
+
+Disallow: /datenschutz/
+Disallow: /en/privacy/
+
+Disallow: /impressum/
+Disallow: /en/legal/
+
+Disallow: /vault/
+Disallow: /en/vault/
+
+Disallow: /logout/
+Disallow: /en/logout/
+
+Disallow: /**/landingpages/
+
+Sitemap: https://tagedraussen.at/sitemap.xml

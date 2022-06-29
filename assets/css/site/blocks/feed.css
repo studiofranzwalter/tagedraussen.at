@@ -1,0 +1,17 @@
+/*
+ *
+ * @info Feed block
+ * @path assets/css/snippets/feed.css
+ * @date 20220508
+ *
+ */
+
+[data-block="feed"] {
+  --grid-column: 3 / -3;
+  list-style-type: decimal;
+  margin-left: 2ch;
+}
+
+[data-block="feed"]>li {
+  padding-left: 1ch;
+}

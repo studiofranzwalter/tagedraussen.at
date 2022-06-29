@@ -1,0 +1,20 @@
+#
+# @info Audio field
+# @path site/blueprints/fields/audio.yml
+# @date 20220515
+#
+
+help: "<code contenteditable>->audio()</code>" 
+image: false
+info: "{{ file.niceSize }}"
+label: 
+  de: Audio-Dateie
+layout: list
+query: page.children.find('media').files.filterBy('template', 'audio')
+sortable: false
+text: "{{ file.name }}"
+translate: false
+type: files
+uploads: 
+  parent: page.children.find('media')
+  template: audio

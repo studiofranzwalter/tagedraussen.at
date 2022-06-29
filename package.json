@@ -1,0 +1,32 @@
+{
+	"name": "tagedraussen.at",
+	"license": "unlicensed",
+	"author": {
+		"name": "Franz Walter",
+		"url": "https://franzwalter.com",
+		"email": "mail@franzwalter.com"
+	},
+	"private": true,
+	"browserslist": [
+		"last 1 version",
+		"> 1%"
+	],
+	"scripts": {
+		
+		"css:min":           "postcss ./assets/css/site.css --use postcss-import --use autoprefixer --use cssnano --no-map --output ./assets/css/site.min.css",
+		"css:watch":         "chokidar \"./assets/css/**/*.css\" -c \"postcss ./assets/css/site.css --use postcss-import --use autoprefixer --use cssnano --output ./assets/css/site.min.css\"",
+		
+		"del:cache":         "rm -rf site/cache/* && touch site/cache/index.html",
+		"del:media":         "rm -rf media/* && touch media/index.html",
+		"del:sessions":      "rm -rf site/sessions/* && touch site/sessions/index.html",
+		
+		"deploy:production": "sh .deployproduction",
+		"deploy:staging":    "sh .deploystaging",
+		
+		"open:local":        "open http://tagedraussen.at.test",
+		"open:production":   "open https://tagedraussen.at",
+		"open:staging":      "open https://neu.tagedraussen.at",
+		
+		"server:start":      "open http://localhost:8000 && php -S localhost:8000 kirby/router.php"
+	}
+}

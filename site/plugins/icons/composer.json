@@ -1,0 +1,11 @@
+{
+    "name": "studiofranzwalter/icons",
+    "description": "Plugin to add additional panel icons",
+    "type": "kirby-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Franz Walter"
+        }
+    ]
+}

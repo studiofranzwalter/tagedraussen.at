@@ -1,0 +1,76 @@
+/*
+ *
+ * @info Header styles
+ * @path assets/css/snippets/header.css
+ * @date 20220529
+ * 
+ */
+
+header {
+  --flex-wrap: wrap;
+  --flex-grow: 1;
+  --flex-shrink: 1;
+
+  --grid-column: 1 / -1;
+  --grid-row: 2 / 2;
+
+  background-color: var(--background);
+  background-image: url('/assets/images/header-background.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  color: var(--foreground);
+  font-family: var(--secondary);
+
+  font-size: var(--size-2);
+  gap: var(--space-xs);
+
+  padding-top: calc(var(--space-xs)*(+1));
+  padding-bottom: calc(var(--space-s-m));
+  padding-inline: calc(var(--space-xs)*(+1));
+  z-index: 10;
+}
+
+header figure {
+  --flex-basis: 20rem;
+  --flex-grow: 2;
+  --flex-shrink: 1;
+  aspect-ratio: 16/9;
+}
+
+header figcaption {
+  font-size: var(--size-0);
+}
+
+header h2 {
+  --flex-basis: 20rem;
+  --flex-grow: 1;
+  --flex-shrink: 1;
+  margin: auto;
+
+  color: var(--foreground);
+
+  align-content: center;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
+header[data-banner-type*="logo"] span {
+  --flex-basis: 100vw;
+  text-align: center;
+}
+
+header svg {
+  color: var(--highlight, var(--foreground));
+}
+
+header h2 * {
+  --flex-grow: 0;
+  --flex-basis: min(100%, 28rem);
+}
+
+header figure video,
+header figure img {
+  /* -webkit-clip-path: url(#media-frame);
+  clip-path: url(#media-frame); */
+}

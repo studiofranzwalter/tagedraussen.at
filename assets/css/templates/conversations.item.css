@@ -1,0 +1,66 @@
+/*
+ *
+ * @info Additional styles for the conversations.item template
+ * @path assets/css/templates/conversations.item.css
+ * @date 20220530
+ * 
+ */
+
+:where(:root, ::selection) {
+  --background: var(--ice);
+  --foreground: var(--white);
+  --highlight: var(--ice);
+}
+
+:where(header, nav, aside) {
+  --background: var(--ice);
+  --foreground: var(--white);
+  --highlight: var(--white);
+}
+
+body {
+  --background: var(--white);
+  --foreground: var(--black);
+  --highlight: var(--ice);
+}
+
+[data-block*="audio"] {
+  --grid-column: 3/-3;
+}
+
+audio {
+  width: 100%;
+  background-color: var(--ice);
+  padding: var(--space-3xs);
+  box-shadow: .25rem .25rem 0px 0px #A7C7C1;
+  ;
+  transition: all 0.4s;
+  height: var(--space-s);
+
+}
+
+
+[data-block*="teaser"] figure {
+  --background: var(--white);
+  --foreground: var(--black);
+  --highlight: #A7C7C1;
+  margin-bottom: var(--space-xs);
+}
+
+[data-block*="teaser"] a:hover {
+  --background: #A7C7C1;
+  --foreground: var(--white);
+  --highlight: var(--white);
+}
+
+[data-block*="teaser"] a:hover figure {
+  mix-blend-mode: lighten;
+}
+
+[data-block="teaser"] img {
+  /* aspect-ratio: 1/1; */
+}
+
+[data-block="teaser"] h3 {
+  display: none;
+}

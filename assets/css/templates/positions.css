@@ -1,0 +1,35 @@
+/*
+ *
+ * @info Additional styles for the positions template
+ * @path assets/css/templates/positions.css
+ * @date 20220508
+ * 
+ */
+
+:where(:root, ::selection) {
+  --background: var(--rose);
+  --foreground: var(--white);
+}
+
+:where(header, nav, aside) {
+  --background: var(--rose);
+  --foreground: var(--white);
+  --highlight:  var(--white);
+
+}
+
+body {
+  --highlight:  var(--rose);
+}
+
+[data-block*="teaser"] {
+  --background: var(--white);
+  --foreground: var(--black);
+  --highlight:  var(--rose);
+}
+
+[data-block*="teaser"] a:hover {
+  --background: var(--rose);
+  --foreground: var(--white);
+  --highlight:  var(--white);
+}

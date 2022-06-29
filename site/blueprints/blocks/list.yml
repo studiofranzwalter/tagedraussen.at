@@ -1,0 +1,17 @@
+#
+# @info List block 
+# @path site/blueprints/blocks/list.yml
+# @date 20220515
+#
+
+name: Auflistung
+icon: list-bullet
+wysiwyg: true
+preview: list
+
+fields:
+  text:
+    label: field.blocks.list.name
+    type: list
+    width: 1/1
+    help: "<code contenteditable>->text()</code>"

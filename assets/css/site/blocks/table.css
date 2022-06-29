@@ -1,0 +1,14 @@
+/*
+ *
+ * @info Table block
+ * @path assets/css/snippets/tables.css
+ * @date 20220508
+ *
+ * @status DRAFT
+ *
+ */
+
+
+table {
+  border-collapse: collapse;
+}
