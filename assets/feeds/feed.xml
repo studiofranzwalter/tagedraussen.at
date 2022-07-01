@@ -31,7 +31,7 @@
         <content:encoded><![CDATA[<p>In der ersten Folge der Tage draußen! Gespräche blicken wir zurück auf die Entstehung des Films. Wir hören rein in die ersten Gespräche von Filmemacher Franz Walter mit Hanna Moser, der damaligen Leiterin der Alpenvereinsjugend, sowie mit Gerald Koller, einem langjährigen Begleiter des Vereins. Es geht dabei um Aufbruch, die ersten Schritte und den Mut ins Neue zu gehen. Los geht's.<br><br>Gesprächspartner: <br><br>Hanna Moser war von 2010 bis 2019 Leiterin der Alpenvereinsjugend Österreich.<br><br>Gerald Koller erkundet seit 35 Jahren mit Menschen und Organisationen Wege zu Zuversicht und Entwicklungsmut. Weitere Informationen auf der Webseite qualitaetleben.at.<br></p>]]></content:encoded>
       </description>
       <itunes:image href="https://tagedraussen.at/assets/feeds/aufbruch.png" />
-      <enclosure length="39457937" type="audio/mpeg" url="https://tagedraussen.at/media/pages/gespraeche/aufbruch/media/eef4facef7-1654011425/tagedraussengepraeche-aufbruch.mp3"/>
+      <enclosure length="39457937" type="audio/mpeg" url="https://tagedraussen.at/content/0_gespraeche/0_aufbruch/media/tagedraussengepraeche-aufbruch.mp3"/>
       <link>https://tagedraussen.at/gespraeche/aufbruch</link>
       <guid>oeavtdgstart</guid>
       <pubDate>Thu, 25 Feb 2021 00:00:00 GMT</pubDate>
@@ -50,7 +50,7 @@
         <content:encoded><![CDATA[<p>In der zweiten Folge der Tage draußen! Gespräche geht es um Risiko und Verantwortung. Wir schauen auf Qualitäten einer zutrauenden Haltung in der Begleitung von Kindern und Jugendlichen und ermutigen, das Wagnis Leben zu ermöglichen. Ausschnitte aus dem Fachsymposium "Verantwortung ermöglichen" finden darin genauso Platz wie die Gespräche mit Luis Töchterle, Tom Greil, Dani Tollinger und Lisi Steurer. Los geht's!<br><br>Gesprächspartner: <br><br>Dr. Nicole Slupetzky, Luis Töchterle, Tom Greil, Dani Tollinger, Marianne Hofinger-Koblmüller, Lisi Steurer, Gerald Koller</p>]]></content:encoded>
       </description>
       <itunes:image href="https://tagedraussen.at/assets/feeds/risiko.png" />
-      <enclosure length="34858144" type="audio/mpeg" url="https://tagedraussen.at/media/pages/gespraeche/risiko/media/e8ca53ed99-1654011409/tagedraussengepraeche-risiko.mp3"/>
+      <enclosure length="34858144" type="audio/mpeg" url="https://tagedraussen.at/content/0_gespraeche/0_risiko/media/tagedraussengepraeche-risiko.mp3"/>
       <link>https://tagedraussen.at/gespraeche/risiko</link>
       <guid>oeavtdgrisk</guid>
       <pubDate>Thu, 4 Mar 2021 00:00:00 GMT</pubDate>
@@ -69,7 +69,7 @@
         <content:encoded><![CDATA[<p>Freiraum. Was ist das? Welche Möglichkeiten eröffnet geschaffener Freiraum, was kann darin entstehen? Wie lernen wir verantwortungsvoll mit Freiräumen umzugehen? Und warum braucht Freiraum auch Vertrauen und Kommunikation? In dieser Folge sprechen wir mit Eva-Maria Weingärtler über den Freiraum im künstlerischen Schaffen und hören den inspirierenden Vortrag von Robert Renzler, Die Freiheit zu wagen, das Wagnis frei zu sein!, gehalten im Rahmen des Fachsymposiums „Verantwortung ermöglichen“. Los geht's.</p>]]></content:encoded>
       </description>
       <itunes:image href="https://tagedraussen.at/assets/feeds/freiraum.png" />
-      <enclosure length="19296840" type="audio/mpeg" url="https://tagedraussen.at/media/pages/gespraeche/freiraum/media/f4cb901210-1654011354/tagedraussengespraeche-freiraum.mp3"/>
+      <enclosure length="19296840" type="audio/mpeg" url="https://tagedraussen.at/content/0_gespraeche/0_freiraum/media/tagedraussengepraeche-freiraum.mp3"/>
       <link>https://tagedraussen.at/gespraeche/freiraum</link>
       <guid>oeavtdgfreedom</guid>
       <pubDate>Thu, 11 Mar 2021 00:00:00 GMT</pubDate>
@@ -88,7 +88,7 @@
         <content:encoded><![CDATA[<p>In dieser Folge geht es um Beziehung, insbesondere um die Beziehungsebene zwischen Eltern und Kindern. Aus dem Gesprächsausschnitt mit Jürgen Einwanger erfahren wir den Unterschied zwischen Theorie und Praxis. Robin Menges zeigt auf, welche Rolle heute Vorbilder für Jugendliche spielen, und warum sie die Herangehensweise an den Film "Tage draußen!" gelungen findet. Menges erinnert uns - Beziehung braucht beides: Das Miteinander und die Verbindung zu sich selbst. Los geht's!</p>]]></content:encoded>
       </description>
       <itunes:image href="https://tagedraussen.at/assets/feeds/beziehung.png" />
-      <enclosure length="19233310" type="audio/mpeg" url="https://tagedraussen.at/media/pages/gespraeche/beziehung/media/50ac93389b-1654011328/tagedraussengespraeche-beziehung.mp3"/>
+      <enclosure length="19233310" type="audio/mpeg" url="https://tagedraussen.at/content/0_gespraeche/0_beziehung/media/tagedraussengepraeche-beziehung.mp3"/>
       <link>https://tagedraussen.at/gespraeche/beziehung</link>
       <guid>oeavtdgrelationship</guid>
       <pubDate>Thu, 18 Mar 2021 00:00:00 GMT</pubDate>
@@ -107,7 +107,7 @@
         <content:encoded><![CDATA[<p>In der vorerst letzten Folge der Tage draußen! Gespräche richten wir den Blick in die Zukunft, mit Zuversicht. Andrea Szabadi-Heine teilt mit uns ihr persönliches Schicksal und zeigt auf, wie man aus einer Krise heraus den Kurs seines Lebens ändern und wieder nach vorn schauen kann. Gerald Koller beendet unsere Audio-Serie mit einem Manifest der Zuversicht und wir sagen Danke und wünschen euch viele tolle Tage draußen!<br><br>Gesprächspartner: <br><br>Andrea Szabadi Heine ist Trainerin und Beraterin, leidenschaftlich in der Natur unterwegs und liebt Herausforderungen. Seit ihrem Unfall 1999 ist sie inkomplett querschnittsgelähmt und entschlossen an der Vision einer inklusiven Welt mitzuwirken. Mit der Alpenvereinsjugend war Andrea auch schon unterwegs, bei der Inklusiven Transalp und beim Team Insieme. Sie leitet auch einzelne Kurse im Lehrgang Alpinpädagogik Schwerpunkt Inklusion.</p>]]></content:encoded>
       </description>
       <itunes:image href="https://tagedraussen.at/assets/feeds/zuversicht.png" />
-      <enclosure length="16769023" type="audio/mpeg" url="https://tagedraussen.at/media/pages/gespraeche/zuversicht/media/922aedd26d-1654011402/tagedraussengespraeche-zuversicht.mp3"/>
+      <enclosure length="16769023" type="audio/mpeg" url="https://tagedraussen.at/content/0_gespraeche/0_zuversicht/media/tagedraussengepraeche-zuversicht.mp3"/>
       <link>https://tagedraussen.at/gespraeche/zuversicht</link>
       <guid>oeavtdgconfidence</guid>
       <pubDate>Thu, 25 Mar 2021 00:00:00 GMT</pubDate>
