@@ -11,62 +11,62 @@
 <?php snippet('head') ?>
 
 <main data-grid>
-  
-  <?php snippet('header') ?>
 
-  <nav data-flex>
-    <a href="<?= page('startseite')->url() ?>">‹ <?= t('goBackHome') ?></a>
-  </nav>
-  
-  <?php if ($kirby->user() == false): ?>
+	<?php snippet('header') ?>
 
-    <h3 data-block="heading">Passwort eingeben</h3>
-    
-    <div data-block="text">
-      <?= $page->introduction()->kt() ?>
-    </div>
+	<nav data-flex>
+		<a href="<?= page('startseite')->url() ?>">‹ <?= t('goBackHome') ?></a>
+	</nav>
 
-    <div data-block="text form">
-      <form method="post" action="<?= $page->url() ?>">
-        <input
-          autocomplete="off"
-          tabindex="-1"
-          name="email"
-          value="login@tagedraussen-film.at"
-          id="email"
-          type="email"
-          hidden
-        >
-        <label hidden for="password"><?= $page->password()->html() ?></label>
-        <input
-          type="password"
-          autocomplete="off"
-          id="password"
-          name="password"
-          value="<?= get('password') ? esc(get('password'), 'attr') : '' ?>"
-          placeholder="Passwort eingeben"
-        >
-        <input
-          type="submit"
-          name="login"
-          value="Anmelden"
-          class="submit button"
-        >
-      </form>
+	<?php if ($kirby->user() == false): ?>
 
-      <?php if($error): ?>
-        <p class="notification__error">Das Passwort war nicht korrekt.</p>
-      <?php endif ?>
+		<h3 data-block="heading">Passwort eingeben</h3>
 
-    </div>
+		<div data-block="text">
+			<?= $page->introduction()->kt() ?>
+		</div>
 
-  <?php else: ?>
+		<div data-block="text form">
+			<form method="post" action="<?= $page->url() ?>">
+				<input
+					autocomplete="off"
+					tabindex="-1"
+					name="email"
+					value="login@tagedraussen-film.at"
+					id="email"
+					type="email"
+					hidden
+				>
+				<label hidden for="password"><?= $page->password()->html() ?></label>
+				<input
+					type="password"
+					autocomplete="off"
+					id="password"
+					name="password"
+					value="<?= get('password') ? esc(get('password'), 'attr') : '' ?>"
+					placeholder="Passwort eingeben"
+				>
+				<input
+					type="submit"
+					name="login"
+					value="Anmelden"
+					class="submit button"
+				>
+			</form>
 
-    <?= $page->contents()->toBlocks() ?>  
-    
-  <?php endif ?>
+			<?php if($error): ?>
+				<p class="notification__error">Das Passwort war nicht korrekt.</p>
+			<?php endif ?>
 
-  <?php snippet('footer') ?>
+		</div>
+
+	<?php else: ?>
+
+		<?= $page->contents()->toBlocks() ?>
+
+	<?php endif ?>
+
+	<?php snippet('footer') ?>
 
 </main>
 

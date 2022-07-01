@@ -11,16 +11,16 @@
 <?php snippet('head') ?>
 
 <main data-grid>
-  
-  <?php snippet('header') ?>
-  
-  <nav data-flex>
-    <a href="<?= page('startseite')->url() ?>">‹ <?= t('goBackHome') ?></a>
-  </nav>
 
-  <?php snippet('contents') ?>
+	<?php snippet('header') ?>
 
-  <?php snippet('footer') ?>
+	<nav data-flex>
+		<a href="<?= page('startseite')->url() ?>">‹ <?= t('goBackHome') ?></a>
+	</nav>
+
+	<?php snippet('contents') ?>
+
+	<?php snippet('footer') ?>
 
 </main>
 

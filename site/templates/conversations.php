@@ -11,13 +11,13 @@
 <?php snippet('head') ?>
 
 <main data-grid>
-  
-  <?php snippet('header') ?>
-  <?php snippet('navigation') ?>
-  <?php snippet('contents') ?>
-  <?php snippet('blocks/cardlets', ['content' => $kirby->collection('conversations')]) ?>
-  <?php snippet('footer') ?>
-  
+
+	<?php snippet('header') ?>
+	<?php snippet('navigation') ?>
+	<?php snippet('contents') ?>
+	<?php snippet('blocks/cardlets', ['content' => $kirby->collection('conversations')]) ?>
+	<?php snippet('footer') ?>
+
 </main>
 
 <?php snippet('foot') ?>
