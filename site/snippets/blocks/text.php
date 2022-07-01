@@ -19,5 +19,5 @@
   <?php e($animation, 'data-animation="'.$animation.'"') ?>
   <?php e($modifier, 'data-modifier="'.$modifier.'"') ?>
 >
-  <?= $block->text()->kti() ?>
+  <?= $content->text()->kti() ?>
 </div>

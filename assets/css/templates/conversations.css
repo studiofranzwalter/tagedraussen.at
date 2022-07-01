@@ -38,8 +38,9 @@ header [data-block="image"] {
   --highlight: #A7C7C1;
 }
 
-
-
+[data-block*="teaser"] a {
+  margin-bottom: var(--space-s);
+}
 
 [data-block*="teaser"] figure {
   --background: var(--white);
