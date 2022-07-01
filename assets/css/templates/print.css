@@ -8,75 +8,75 @@
 
 @media print {
 
-  :root,
-  main * {
-    --foreground: var(--black) !important;
-    --background: #FFF !important;
-    --highlight: var(--black) !important;
-  }
+	:root,
+	main * {
+		--foreground: var(--black) !important;
+		--background: #FFF !important;
+		--highlight: var(--black) !important;
+	}
 
-  html {
-    background: #FFF !important;
-    padding-top: 5ch;
-  }
+	html {
+		background: #FFF !important;
+		padding-top: 5ch;
+	}
 
-  main>header>div {
-    filter: grayscale(100%) opacity(1) contrast(10);
-  }
+	main>header>div {
+		filter: grayscale(100%) opacity(1) contrast(10);
+	}
 
-  /* Cleanup */
-  main footer,
-  main nav {
-    display: none !important;
-  }
+	/* Cleanup */
+	main footer,
+	main nav {
+		display: none !important;
+	}
 
-  @page {
-    margin: 2cm;
-  }
+	@page {
+		margin: 2cm;
+	}
 
-  [data-visibility*="screen"],
-  nav {
-    display: none;
-  }
+	[data-visibility*="screen"],
+	nav {
+		display: none;
+	}
 
-  body {
-    float: none;
-    font: 14pt system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-se rif, "Apple Color Emoji", "Segoe UI Emoji";
-    line-height: 1.35;
-    margin: 0;
-    width: 100%;
-  }
+	body {
+		float: none;
+		font: 14pt system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-se rif, "Apple Color Emoji", "Segoe UI Emoji";
+		line-height: 1.35;
+		margin: 0;
+		width: 100%;
+	}
 
-  h1 {
-    font-size: 24pt;
-  }
+	h1 {
+		font-size: 24pt;
+	}
 
-  h2,
-  h3,
-  h4 {
-    font-size: 14pt;
-    margin-top: 25px;
-  }
+	h2,
+	h3,
+	h4 {
+		font-size: 14pt;
+		margin-top: 25px;
+	}
 
-  :is(a, blockquote, h1, h2, h3, h4, h5, h6, img, table, pre, ul, ol, dl) {
-    page-break-after: avoid;
-    page-break-before: avoid;
-    page-break-inside: avoid;
-  }
+	:is(a, blockquote, h1, h2, h3, h4, h5, h6, img, table, pre, ul, ol, dl) {
+		page-break-after: avoid;
+		page-break-before: avoid;
+		page-break-inside: avoid;
+	}
 
-  a:link,
-  a:visited,
-  a {
-    background: transparent;
-    color: var(--black);
-    text-decoration: underline;
-  }
+	a:link,
+	a:visited,
+	a {
+		background: transparent;
+		color: var(--black);
+		text-decoration: underline;
+	}
 
 
-  /* @2022-05-05 */
+	/* @2022-05-05 */
 
-  video {
-    display: none;
-  }
+	video {
+		display: none;
+	}
 
 }

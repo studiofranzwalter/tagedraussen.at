@@ -7,23 +7,23 @@
  */
 
 :where(h1, h2, h3, h4, h5, h6) {
-  /* max-width: 62ch; */
-  /* color: var(--foreground); */
+	/* max-width: 62ch; */
+	/* color: var(--foreground); */
 }
 
 /* :where(h2, h3, h4):not(:first-child) {
-  padding-top: var(--space-xs);
+	padding-top: var(--space-xs);
 } */
 
 h2 {
-  line-height: 1.1;
+	line-height: 1.1;
 }
 
 h3 {
-  font-family: var(--secondary);
-  font-size: var(--size-1);
-  opacity: .85;
-  margin-block: var(--space-xs) var(--space-3xs);
+	font-family: var(--secondary);
+	font-size: var(--size-1);
+	opacity: .85;
+	margin-block: var(--space-xs) var(--space-3xs);
 }
 
 h4 {}
@@ -33,7 +33,7 @@ h5 {}
 p {}
 
 [data-block="heading"] {
-  --grid-column: 3 / -3;
+	--grid-column: 3 / -3;
 }
 
 [data-block="heading"][data-modifier="h2"] {}

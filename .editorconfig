@@ -1,9 +1,6 @@
 # This file is for unifying the coding style for different editors and IDEs
 # editorconfig.org
 
-# PHP PSR-12 Coding Standards
-# https://www.php-fig.org/psr/psr-12/
-
 root = true
 
 [*]
@@ -12,13 +9,19 @@ end_of_line = lf
 indent_style = tab
 indent_size = 2
 trim_trailing_whitespace = true
-
-[*.php]
-indent_size = 2
 insert_final_newline = true
 
-[*.yml]
+# [*.php]
+# indent_size = 2
+
+[*.{yml,yaml}]
+indent_style = space
+insert_final_newline = false
+trim_trailing_whitespace = false
+
+[*.{md,mkd,mkdn,markdown}]
+trim_trailing_whitespace = false
 indent_style = space
 
-[*.md]
-trim_trailing_whitespace = false
+[{*.sh,.deployignore,.deployproduction,.deploystaging,.htaccess}]
+indent_style = space

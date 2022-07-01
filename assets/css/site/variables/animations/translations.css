@@ -12,21 +12,21 @@
 
 [data-animation*="move-up"] {
 
-  --animation-duration: 1.5s;
-  --animation-delay: 2.5s;
-  --animation-repeat: 1;
+	--animation-duration: 1.5s;
+	--animation-delay: 2.5s;
+	--animation-repeat: 1;
 
-  animation-name: move-up;
+	animation-name: move-up;
 
 }
 
 
 @keyframes move-up {
-  from {
-    transform: none;
-  }
+	from {
+		transform: none;
+	}
 
-  to {
-    transform: translateY(calc(12vmin*-1));
-  }
+	to {
+		transform: translateY(calc(12vmin*-1));
+	}
 }

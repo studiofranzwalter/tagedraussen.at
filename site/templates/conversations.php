@@ -1,11 +1,11 @@
 <?php
  /*
-  *
-  * @info Conversations page template
-  * @path site/templates/conversations.php
-  * @date 20220624
-  *
-  */
+	*
+	* @info Conversations page template
+	* @path site/templates/conversations.php
+	* @date 20220624
+	*
+	*/
 ?>
 
 <?php snippet('head') ?>

@@ -1,11 +1,11 @@
 <?php
  /*
-  *
-  * @info Simple page template
-  * @path site/templates/simple.php
-  * @date 20220427
-  *
-  */
+	*
+	* @info Simple page template
+	* @path site/templates/simple.php
+	* @date 20220427
+	*
+	*/
 ?>
 
 <?php snippet('head') ?>

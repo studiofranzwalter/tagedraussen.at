@@ -7,40 +7,40 @@
  */
 
 :where(:root, ::selection) {
-  --background: var(--green);
-  --foreground: var(--white);
+	--background: var(--green);
+	--foreground: var(--white);
 }
 
 :where(header, nav, aside) {
-  --background: var(--green);
-  --foreground: var(--white);
-  --highlight: var(--white);
+	--background: var(--green);
+	--foreground: var(--white);
+	--highlight: var(--white);
 }
 
 body {
-  --background: var(--white);
-  --foreground: var(--black);
-  --highlight: var(--green);
+	--background: var(--white);
+	--foreground: var(--black);
+	--highlight: var(--green);
 }
 
 :root {
 
-  --green: #007956;
-  /* --green: #00825d; */
-  --coral: #F7D2C6;
-  --rose: #E2725B;
-  --ice: #93B8B1;
-  --olive: #808F6A;
-  --sand: #FFF8C5;
-  --beach: #ebeae1;
-  --beach-darker: #d2d0c0;
-  --beach-darkest: #95948b;
+	--green: #007956;
+	/* --green: #00825d; */
+	--coral: #F7D2C6;
+	--rose: #E2725B;
+	--ice: #93B8B1;
+	--olive: #808F6A;
+	--sand: #FFF8C5;
+	--beach: #ebeae1;
+	--beach-darker: #d2d0c0;
+	--beach-darkest: #95948b;
 
-  --trueblack: #000000;
-  --black: #131313;
-  --grey: #232323;
-  --quartz: #424343;
-  --silver: #d0cdcd;
-  --white: #f7f4ef;
+	--trueblack: #000000;
+	--black: #131313;
+	--grey: #232323;
+	--quartz: #424343;
+	--silver: #d0cdcd;
+	--white: #f7f4ef;
 
 }

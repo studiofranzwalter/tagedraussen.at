@@ -1,23 +1,23 @@
 /*
  *
- * @info Text block 
+ * @info Text block
  * @path assets/css/snippets/text.css
  * @date 20220510
  *
  */
 
 [data-block *="text"] {
-  --grid-column: 3 / -3;
+	--grid-column: 3 / -3;
 }
 
 [data-block="text"] p {
-  max-width: 65ch;
+	max-width: 65ch;
 }
 
 [data-block="text"] p+p {
-  margin-top: var(--space-2xs);
+	margin-top: var(--space-2xs);
 }
 
 [data-block="text"]>[data-block="text"] {
-  margin-top: 0;
+	margin-top: 0;
 }

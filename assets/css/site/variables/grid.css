@@ -3,39 +3,39 @@
  * @info Grid variables
  * @path assets/css/variables/grid.css
  * @date 20220529
- * 
+ *
  */
 
 
 :is([data-grid]) {
-  display: grid;
-  grid-template-columns: var(--grid-template-columns);
-  grid-template-rows: var(--grid-template-rows);
-  gap: var(--gap);
-  column-gap: var(--column-gap);
-  row-gap: var(--row-gap);
+	display: grid;
+	grid-template-columns: var(--grid-template-columns);
+	grid-template-rows: var(--grid-template-rows);
+	gap: var(--gap);
+	column-gap: var(--column-gap);
+	row-gap: var(--row-gap);
 }
 
 :is([data-grid])>* {
-  grid-column: var(--grid-column);
-  grid-row: var(--grid-row);
+	grid-column: var(--grid-column);
+	grid-row: var(--grid-row);
 }
 
 [data-grid*="auto"] {
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--grid-min-width)), 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--grid-min-width)), 1fr));
 
-  --grid-min-width: 15rem;
+	--grid-min-width: 15rem;
 }
 
 [data-grid*="auto"]>* {
-  --grid-row: "";
-  --grid-column: "";
+	--grid-row: "";
+	--grid-column: "";
 }
 
 [data-grid*="full-width"] {
-  grid-column: 1 / -1;
+	grid-column: 1 / -1;
 }
 
 [data-grid*="full-height"] {
-  grid-row: 1 / -1;
+	grid-row: 1 / -1;
 }

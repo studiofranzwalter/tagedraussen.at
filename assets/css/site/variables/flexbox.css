@@ -3,18 +3,18 @@
  * @info Flexbox variables
  * @path assets/css/variables/flexbox.css
  * @date 20220508
- * 
+ *
  */
 
 [data-flex] {
-  display: flex;
-  flex-direction: var(--flex-direction);
-  flex-wrap: var(--flex-wrap);
-  /* flex-flow: var(--flex-flow); */
+	display: flex;
+	flex-direction: var(--flex-direction);
+	flex-wrap: var(--flex-wrap);
+	/* flex-flow: var(--flex-flow); */
 }
 
 [data-flex]>* {
-  flex-basis: var(--flex-basis);
-  flex-grow: var(--flex-grow);
-  flex-shrink: var(--flex-shrink);
+	flex-basis: var(--flex-basis);
+	flex-grow: var(--flex-grow);
+	flex-shrink: var(--flex-shrink);
 }

@@ -3,13 +3,13 @@
  * @info Additional styles for the simple template
  * @path assets/css/templates/simple.css
  * @date 20220627
- * 
+ *
  */
 
 nav {
-  background-color: #007956;
+	background-color: #007956;
 }
 
 nav a {
-  color: #f7f4ef;
+	color: #f7f4ef;
 }

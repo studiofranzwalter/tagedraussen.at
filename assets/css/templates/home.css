@@ -3,11 +3,11 @@
  * @info Additional styles for the home template
  * @path assets/css/templates/home.css
  * @date 20220510
- * 
+ *
  */
 
 [data-block="quote"]:first-of-type {
-  --grid-column: 3 / -3;
-  margin-block: var(--space-s);
-  padding-bottom: var(--space-xs);
+	--grid-column: 3 / -3;
+	margin-block: var(--space-s);
+	padding-bottom: var(--space-xs);
 }

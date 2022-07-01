@@ -7,5 +7,5 @@
  */
 
 [data-block="list"] {
-  --grid-column: 3 / -3;
+	--grid-column: 3 / -3;
 }

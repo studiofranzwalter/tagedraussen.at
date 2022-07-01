@@ -1,11 +1,11 @@
 <?php
  /*
-  *
-  * @info Vault page template
-  * @path site/templates/vault.php
-  * @date 20220627
-  *
-  */
+	*
+	* @info Vault page template
+	* @path site/templates/vault.php
+	* @date 20220627
+	*
+	*/
 ?>
 
 <?php snippet('head') ?>

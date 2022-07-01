@@ -8,21 +8,21 @@
 
 [data-animation*="scale-down"] {
 
-  --animation-duration: 2s;
-  --animation-delay: 2s;
-  --animation-repeat: 1;
+	--animation-duration: 2s;
+	--animation-delay: 2s;
+	--animation-repeat: 1;
 
-  animation-name: scale-down;
+	animation-name: scale-down;
 
 }
 
 @keyframes scale-down {
 
-  0% {
-    transform: none;
-  }
+	0% {
+		transform: none;
+	}
 
-  100% {
-    transform: scale(.9, .9);
-  }
+	100% {
+		transform: scale(.9, .9);
+	}
 }

@@ -1,11 +1,11 @@
 <?php
  /*
-  *
-  * @info Head snippet
-  * @path site/snippets/head.php
-  * @date 20220628
-  *
-  */
+	*
+	* @info Head snippet
+	* @path site/snippets/head.php
+	* @date 20220628
+	*
+	*/
 ?>
 
 <!doctype html>
@@ -42,7 +42,6 @@
 	<?php if (file_exists($kirby->root('index') . '/assets/css/templates/' . $page->intendedTemplate().'.css')) {
 		echo css('/assets/css/templates/' . $page->intendedTemplate().'.css');
 	} ?>
-
 
 	<meta content="<?= $metaAuthor ?>" name="author" >
 	<meta content="<?= $metaDescription ?>" name="description" >

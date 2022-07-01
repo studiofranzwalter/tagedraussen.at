@@ -3,46 +3,46 @@
  * @info Additional styles for the films template
  * @path assets/css/templates/films.css
  * @date 20220530
- * 
+ *
  */
 
 :where(:root, ::selection) {
-  /* --background: ; */
-  /* --foreground: ; */
-  /* --highlight: ; */
+	/* --background: ; */
+	/* --foreground: ; */
+	/* --highlight: ; */
 }
 
 :where(header, nav, aside) {
-  /* --background: ; */
-  /* --foreground: ; */
-  /* --highlight: ; */
+	/* --background: ; */
+	/* --foreground: ; */
+	/* --highlight: ; */
 }
 
 body {
-  /* --background: ; */
-  /* --foreground: ; */
-  /* --highlight: ; */
+	/* --background: ; */
+	/* --foreground: ; */
+	/* --highlight: ; */
 }
 
 
 /*----------  English version (temporary…)  ----------*/
 
 /* :where([lang="en"], ::selection) {
-  --background: var(--black);
-  --foreground: var(--silver);
-  --highlight: var(--white);
+	--background: var(--black);
+	--foreground: var(--silver);
+	--highlight: var(--white);
 }
 
 [lang="en"] :where(header, nav, aside) {
-  --background: var(--black);
-  --foreground: var(--quartz);
-  --highlight: var(--quartz);
+	--background: var(--black);
+	--foreground: var(--quartz);
+	--highlight: var(--quartz);
 }
 
 [lang="en"] body {
-  --background: var(--grey);
-  --foreground: var(--silver);
-  --highlight: var(--white);
+	--background: var(--grey);
+	--foreground: var(--silver);
+	--highlight: var(--white);
 } */
 
 
@@ -50,14 +50,14 @@ body {
 
 /* [lang="en"] nav [data-state="active"],
 [lang="en"] nav a[data-lang="active"] {
-  --foreground: var(--quartz);
-  --background: var(--silver);
+	--foreground: var(--quartz);
+	--background: var(--silver);
 }
 
 [lang="en"] aside img {
-  opacity: .3;
+	opacity: .3;
 }
 
 [lang="en"] [data-block*="banner"] :where(h2, svg) {
-  width: min(100%, 25rem);
+	width: min(100%, 25rem);
 } */

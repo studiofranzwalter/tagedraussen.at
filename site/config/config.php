@@ -1,11 +1,11 @@
 <?php
  /*
-  *
-  * @info Kirby settings
-  * @path site/config/config.php
-  * @date 20220623
-  *
-  */
+	*
+	* @info Kirby settings
+	* @path site/config/config.php
+	* @date 20220623
+	*
+	*/
 
 header('Cache-Control: public,max-age=300,must-revalidate');
 
@@ -23,39 +23,39 @@ header('X-XSS-Protection: 1; mode=block');
 
 return [
 
-  'cache'                    => require __DIR__ . '/config.cache.php',
-  'hooks'                    => require __DIR__ . '/config.hooks.php',
-  'panel'                    => require __DIR__ . '/config.panel.php',
-  'routes'                   => require __DIR__ . '/config.routes.php',
-  'thumbs'                   => require __DIR__ . '/config.thumbs.php',
-  
-  'content'                  => ['locking' => false],
-  'debug'                    => true,
-  'error'                    => 'fehlerseite',
-  'home'                     => 'startseite',
-  
-  'languages'                => true,
-  'languages.detect'         => false,
-  'language.url.de'          => '/',
-  'language.url.en'          => '/en',  
-    
-  'kirby-extended.redirects' => [
-    'download'               => 'vault',
-    'downloads'              => 'vault',
-    'film'                   => 'filme',
-    'vorfuehrungen'          => 'gespraeche',
-    'themen'                 => 'haltung',
-    'ulligunde'              => 'filme/freiraum',
-    'gespraeche/feed.xml'    => '/assets/feeds/feed.xml',
-  ],
-  
-  'kirby-extended.sitemap'   => [
-    'enable' => false,
-  ],
+	'cache'                    => require __DIR__ . '/config.cache.php',
+	'hooks'                    => require __DIR__ . '/config.hooks.php',
+	'panel'                    => require __DIR__ . '/config.panel.php',
+	'routes'                   => require __DIR__ . '/config.routes.php',
+	'thumbs'                   => require __DIR__ . '/config.thumbs.php',
 
-  'medienbaecker.autoresize.maxWidth'         => 3000,
-  'medienbaecker.autoresize.maxHeight'        => 3000,
-  'medienbaecker.autoresize.excludeTemplates' => ['download'],
-  'medienbaecker.autoresize.excludePages'     => ['downloads', 'download'],
+	'content'                  => ['locking' => false],
+	'debug'                    => true,
+	'error'                    => 'fehlerseite',
+	'home'                     => 'startseite',
+
+	'languages'                => true,
+	'languages.detect'         => false,
+	'language.url.de'          => '/',
+	'language.url.en'          => '/en',
+
+	'kirby-extended.redirects' => [
+		'download'               => 'vault',
+		'downloads'              => 'vault',
+		'film'                   => 'filme',
+		'vorfuehrungen'          => 'gespraeche',
+		'themen'                 => 'haltung',
+		'ulligunde'              => 'filme/freiraum',
+		'gespraeche/feed.xml'    => '/assets/feeds/feed.xml',
+	],
+
+	'kirby-extended.sitemap'   => [
+		'enable' => false,
+	],
+
+	'medienbaecker.autoresize.maxWidth'         => 3000,
+	'medienbaecker.autoresize.maxHeight'        => 3000,
+	'medienbaecker.autoresize.excludeTemplates' => ['download'],
+	'medienbaecker.autoresize.excludePages'     => ['downloads', 'download'],
 
 ];

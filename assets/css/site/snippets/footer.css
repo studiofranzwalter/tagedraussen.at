@@ -3,58 +3,58 @@
  * @info Footer styles
  * @path assets/css/snippets/footer.css
  * @date 20220601
- * 
+ *
  */
 
 footer {
-  --grid-column: 3 / -3;
+	--grid-column: 3 / -3;
 
-  color: var(--foreground);
-  background-color: var(--background);
+	color: var(--foreground);
+	background-color: var(--background);
 
-  margin-top: var(--space-l);
-  margin-bottom: var(--space-m);
+	margin-top: var(--space-l);
+	margin-bottom: var(--space-m);
 
-  /* padding-inline: var(--space-m); */
+	/* padding-inline: var(--space-m); */
 }
 
 footer [data-grid*="auto"] {
-  --grid-min-width: 15rem;
-  padding-bottom: var(--space-m);
+	--grid-min-width: 15rem;
+	padding-bottom: var(--space-m);
 }
 
 footer>* {
-  /* --grid-column: span 1; */
+	/* --grid-column: span 1; */
 }
 
 footer [data-flex] {
-  flex-direction: column;
-  /* --flex-basis: 20rem;
-  --flex-shrink: 1;
-  --flex-grow: 1; */
+	flex-direction: column;
+	/* --flex-basis: 20rem;
+	--flex-shrink: 1;
+	--flex-grow: 1; */
 }
 
 footer a {
-  text-decoration-color: var(--silver);
+	text-decoration-color: var(--silver);
 }
 
 footer a:hover {
-  color: var(--highlight);
-  text-decoration-color: var(--highlight);
+	color: var(--highlight);
+	text-decoration-color: var(--highlight);
 }
 
 footer h3 {
-  --grid-column: 1 / -1;
-  display: block;
-  margin: auto;
-  text-align: center;
+	--grid-column: 1 / -1;
+	display: block;
+	margin: auto;
+	text-align: center;
 }
 
 footer h3 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 footer h4 {
-  font-weight: bold;
-  margin-top: var(--space-s);
+	font-weight: bold;
+	margin-top: var(--space-s);
 }

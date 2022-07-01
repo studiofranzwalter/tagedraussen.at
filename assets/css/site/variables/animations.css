@@ -3,7 +3,7 @@
  * @info Animation variables
  * @path assets/css/variables/animations.css
  * @date 20220623
- * 
+ *
  */
 
 @import url('animations/fades.css');
@@ -12,30 +12,30 @@
 @import url('animations/functions.css');
 
 @media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
+	html {
+		scroll-behavior: smooth;
+	}
 }
 
 [data-animation] {
-  animation-delay: var(--animation-delay, 0);
-  animation-direction: var(--animation-direction, forward);
-  animation-duration: var(--animation-duration, 250ms);
-  animation-fill-mode: var(--animation-fill-mode, both);
-  animation-iteration-count: var(--animation-iteration-count, 1);
-  /* animation-play-state: ""; */
-  animation-timing-function: var(--animation-function);
-  background-attachment: var(--background-attachment);
+	animation-delay: var(--animation-delay, 0);
+	animation-direction: var(--animation-direction, forward);
+	animation-duration: var(--animation-duration, 250ms);
+	animation-fill-mode: var(--animation-fill-mode, both);
+	animation-iteration-count: var(--animation-iteration-count, 1);
+	/* animation-play-state: ""; */
+	animation-timing-function: var(--animation-function);
+	background-attachment: var(--background-attachment);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * {
-    --animation-delay: -1ms !important;
-    --animation-duration: 1ms !important;
-    --animation-iteration-count: 1 !important;
-    --background-attachment: initial !important;
-    scroll-behavior: auto !important;
-    transition-duration: 0s !important;
-    transition-delay: 0s !important;
-  }
+	* {
+		--animation-delay: -1ms !important;
+		--animation-duration: 1ms !important;
+		--animation-iteration-count: 1 !important;
+		--background-attachment: initial !important;
+		scroll-behavior: auto !important;
+		transition-duration: 0s !important;
+		transition-delay: 0s !important;
+	}
 }

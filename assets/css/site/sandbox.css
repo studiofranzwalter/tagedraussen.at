@@ -2,12 +2,11 @@
  *
  * @info Sandbox styles
  * @path assets/css/sandbox.css
- * 
+ *
  */
 
 /* @import url('sandbox/debug.css'); */
 /* @import url('sandbox/noscript.css'); */
 /* @import url('sandbox/offline.css'); */
-  
- [data-sandbox] {}
- 
+
+[data-sandbox] {}

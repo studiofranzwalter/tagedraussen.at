@@ -1,24 +1,24 @@
 <?php
  /*
-  *
-  * @info Production config on Uberspace
-  * @path site/config/config.tagedraussen.at.php
-  * @date 20220510
-  *
-  */
+	*
+	* @info Production config on Uberspace
+	* @path site/config/config.tagedraussen.at.php
+	* @date 20220510
+	*
+	*/
 
 return [
 
-  'cache' => [
-    'pages'   => ['active' => true],
-    'plugins' => ['active' => true]
-  ],
+	'cache' => [
+		'pages'   => ['active' => true],
+		'plugins' => ['active' => true]
+	],
 
-  'debug' => false,
-  'genxbe.ray.enabled' => false,
+	'debug' => false,
+	'genxbe.ray.enabled' => false,
 
-  'languages.detect' => false,
-  'language.url.de'  => '/',
-  'language.url.en'  => '/en',  
+	'languages.detect' => false,
+	'language.url.de'  => '/',
+	'language.url.en'  => '/en',
 
 ];
