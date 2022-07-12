@@ -60,7 +60,9 @@
 
 [data-block="teaser"] a:hover {}
 
-[data-block="teaser"]>a {}
+[data-block="teaser"]>a {
+	margin-bottom: var(--space-xs-s);
+}
 
 [data-block="teaser"] img {
 	aspect-ratio: 16/9;

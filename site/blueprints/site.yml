@@ -12,18 +12,18 @@ tabs:
     columns:
       - width: 2/3
         sections:
-          header: 
+          header:
             type: fields
-            fields: 
-              heading: 
+            fields:
+              heading:
                 label: Titel
                 disabled: false
                 extends: fields/heading
                 help: "<code contenteditable>$site->heading()</code>"
-              summary: 
+              summary:
                 extends: fields/subheading
                 label: Zusammenfassung
-                help: "<code contenteditable>$site->summary()</code>" 
+                help: "<code contenteditable>$site->summary()</code>"
           spotlight:
             label: " "
             type: pages
@@ -36,7 +36,7 @@ tabs:
               color: "{{ page.iconForeground }}"
               icon: "{{ page.icon }}"
               query: false
-            templates: 
+            templates:
               - workshops
               - films
               - positions
@@ -53,8 +53,7 @@ tabs:
             layout: list
             image: false
             help: "<code contenteditable>->collection('panel/misc')</code>"
-            templates: 
-              # - colophon
+            templates:
               - copyright
               - privacy
               - error
@@ -65,18 +64,18 @@ tabs:
               - calendar
   menus:
     icon: list-bullet
-    label: 
+    label:
       de: Menüs
       en: Menus
     columns:
       - width: 1/1
-        sections: 
-          menus: 
+        sections:
+          menus:
             type: fields
-            fields: 
-              navigation: 
+            fields:
+              navigation:
                 type: pages
-                label: 
+                label:
                   de: Navigation
                   en: Navigation
                 image: false
@@ -85,13 +84,13 @@ tabs:
               footerLinksInt:
                 help: <code contenteditable>->footerLinksInt()</code>
                 type: pages
-                label: 
+                label:
                   de: Footer
                 image: false
                 width: 1/2
               footerLinksSocial:
                 help: <code contenteditable>->navigation()</code>
-                label: 
+                label:
                   de: Social Media Links
                 image: false
                 width: 1/2
@@ -103,8 +102,8 @@ tabs:
                   link:
                     label: Link
                     type: url
-              footerLinksExt: 
-                label: 
+              footerLinksExt:
+                label:
                   de: Externe Links
                 image: false
                 width: 1/2
@@ -116,8 +115,7 @@ tabs:
                     type: text
                   link:
                     label: Link
-                    type: url                
-    
+                    type: url
   meta:
     label: Meta
     icon: tag
@@ -130,14 +128,12 @@ tabs:
             placeholder: "{{page.title}}"
             help: <code contenteditable>->metaTitle()</code>
             width: 1/2
-
           metaAuthor:
             label: Autor
             type: text
             placeholder: "{{site.metaauthor}}"
             help: <code contenteditable>->metaAuthor()</code>
             width: 1/2
-
           metaDescription:
             label: Beschreibung
             placeholder: "{{page.summary}}"
@@ -145,13 +141,12 @@ tabs:
             inline: true
             width: 1/3
             help: <code contenteditable>->metaDescription()</code>
-          metaSummary: 
+          metaSummary:
             label: Zusammenfassung
             type: textarea
             buttons: false
             width: 1/3
-          
-          metaImage: 
+          metaImage:
             label: Image
             layout: cardlets
             query: site.find('startseite').children.find('media').images
@@ -164,39 +159,15 @@ tabs:
             type: files
             help: <code contenteditable>->metaImage()</code>
             width: 1/3
-
           metaRobots:
             label: Robots
             type: text
             placeholder: "follow, index"
             width: 1/2
             help: <code contenteditable>->metaRobots()</code>
-
           metaKeywords:
             label: Keywords
             type: tags
             icon: false
             width: 1/2
             help: <code contenteditable>->metaKeywords()</code>
-  
-  # settings:
-  #   extends: tabs/settings
-  #   columns: 
-  #     - width: 1/2
-  #       sections: 
-  #         colors:
-  #           type: fields
-  #           fields:
-  #             background: 
-  #               label: Hintergrund
-  #               type: colors
-  #               help: <code contenteditable>$site->background()</code> Default background color of the website.
-  #             foreground: 
-  #               label: Vordergrund
-  #               type: colors
-  #               help: <code contenteditable>$site->foreground()</code> Default foreground color of the website.
-  #             highlight: 
-  #               label: Highlight
-  #               type: colors
-  #               help: <code contenteditable>$site->highlight()</code> Default highlight color of the website.
-              

@@ -1,8 +1,8 @@
-# 
+#
 # @info .htaccess for Kirby sites
 # @path .htaccess
 # @date 20220626
-# 
+#
 
 <IfModule mod_rewrite.c>
 
@@ -14,13 +14,13 @@
     # RewriteCond %{DOCUMENT_ROOT}/static/%{REQUEST_URI}/index.html -f [NC]
     # RewriteRule ^(.*) %{DOCUMENT_ROOT}/static/%{REQUEST_URI}/index.html [L]
 
-    # Block files and folders beginning with a dot, 
-    # such as .git except for the .well-known folder, 
+    # Block files and folders beginning with a dot,
+    # such as .git except for the .well-known folder,
     # which is used for Let's Encrypt and security.txt
     RewriteRule (^|/)\.(?!well-known\/) index.php [L]
 
     # Block all files in the content folder from being accessed directly
-    # Deactivated to allow for direct links to audio and video files
+    # Deactivated to allow for direct links to audio, video, zip files to bypass media folder
     # RewriteRule ^content/(.*) index.php [L]
 
     # Block all files in the site folder from being accessed directly

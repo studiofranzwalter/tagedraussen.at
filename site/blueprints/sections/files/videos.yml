@@ -1,20 +1,28 @@
 #
 # @info File section for video files
 # @path site/blueprints/sections/files/videos.yml
-# @date 20220515
+# @date 20220707
 #
 
-empty: Keine Video-Dateien
-label: 
-  de: Videos
-image: false
-info: "{{ file.nicesize}}"
-layout: list
+label: Videos
+
+image:
+  back: black
+  query: file.videoposter
+  cover: true
+layout: cards
+limit: 25
 parent: page.children.find('media')
+size: medium
 sortable: false
 template: video
-text: "{{ file.name }}.{{ file.extension }}"
 translate: false
 type: files
 uploads:
   template: video
+
+empty: Keine Video-Dateien
+info: "{{ file.nicesize}}"
+text: "{{ file.name }}.{{ file.extension }}"
+
+

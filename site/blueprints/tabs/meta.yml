@@ -1,13 +1,10 @@
 #
-# @info Extended tab
-# @path site/blueprints/tabs/extended.yml
-# @date 20220508
+# @info Meta (information) tab
+# @path site/blueprints/tabs/meta.yml
+# @date 20220707
 #
 
-label: 
-  de: Meta
-  en: Meta
-
+label: Meta
 icon: tag
 
 fields: 
@@ -52,4 +49,4 @@ fields:
     type: tags
     icon: false
     width: 1/2
-    help: "<code contenteditable>->metaKeywords()</code><br><br>Ergänzend zu den Standard-Keywords:<br><br><code>{{site.metaKeywords}}</code>"
+    help: "<code contenteditable>->metaKeywords()</code>"

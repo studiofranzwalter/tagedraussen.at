@@ -3,7 +3,7 @@
 	*
 	* @info Site navigation
 	* @path site/snippets/menus/navigation.php
-	* @date 20220622
+	* @date 20220704
 	*
 	*/
 
