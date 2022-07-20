@@ -1,7 +1,7 @@
 #
 # @info Teaser tab
 # @path site/blueprints/tabs/teaser.yml
-# @date 20220509
+# @date 20220719
 #
 
 icon: grid-top-left
@@ -9,42 +9,29 @@ label: Teaser
 
 columns:
   - width: 2/3
-    sections: 
-      fields: 
+    sections:
+      fields:
         type: fields
         fields:
-          teaserHeading: 
+          teaserHeading:
             label: "Teaser-Überschrift"
             type: writer
             inline: true
             marks: false
             placeholder: '{{ page.title }}'
             help: "<code contenteditable>->teaserHeading()</code>"
-
-          teaserText: 
+          teaserText:
             label: Teaser-Text
             type: writer
             inline: true
             marks: false
-            # placeholder: '{{ page.subheading }}'
             help: "<code contenteditable>->teaserText()</code><br>Silben und Wörter können mit (​+​) und (​-​) ergänzt werden."
-        
-      punctuation: sections/punctuation-helper
-
   - width: 1/3
-    fields:   
-      teaserImage: 
-
+    fields:
+      teaserImage:
         extends: fields/image
-        help: "<code contenteditable>->poster()</code>" 
-        label: 
+        help: "<code contenteditable>->poster()</code>"
+        label:
           de: Teaser-Bild
           en: Teaser image
-
         help: "<code contenteditable>->teaserImage()</code>"
-
-      # teaserBackground: 
-      #   type: colors
-      # teaserForeground: 
-      #   type: colors
-      # palette: fields/palettes

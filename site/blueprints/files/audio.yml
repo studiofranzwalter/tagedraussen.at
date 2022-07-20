@@ -1,7 +1,7 @@
 #
 # @info File blueprint for audio files
 # @path site/blueprints/files/audio.yml
-# @date 20220515
+# @date 20220712
 #
 
 accept:
@@ -15,8 +15,7 @@ columns:
           description:
             extends: fields/description
             placeholder: "{{ file.name }}"
-          license: 
+          license:
             extends: fields/license
           originalFilename:
             extends: fields/original-filename
-            

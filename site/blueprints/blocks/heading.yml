@@ -1,7 +1,7 @@
 #
-# @info Heading block 
+# @info Heading block
 # @path site/blueprints/blocks/heading.yml
-# @date 20220515
+# @date 20220719
 #
 
 name: Überschrift
@@ -28,6 +28,6 @@ fields:
     marks: false
     width: 5/6
     placeholder: field.blocks.heading.placeholder
-  link: 
+  link:
     type: pages
     multiple: false

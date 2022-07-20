@@ -28,42 +28,29 @@ subpages:
     template: media
 
 tabs:
-  content: 
+  content:
     icon: edit
     label: Inhalt
-    columns: 
+    columns:
       - width: 2/3
         sections:
-          content: 
+          content:
             type: fields
             fields:
               subheading: fields/subheading
               contents: fields/contents
-          # subpages:
-          #   headline: Unterseiten
-          #   type: pages
-          #   text: "{{ page.title }}"
-          #   template: films.item
-          #   layout: cardlets
-          #   info: "↻ {{ page.modified('d.m.Y') }}"
-          #   image:
-          #     back: "#007956"
-          #     color: "#FFFFFF"
-          #     icon: "video"
-          #     query: false
-          punctuation: sections/punctuation-helper
-      - width: 1/3  
+      - width: 1/3
         sticky: true
-        fields: 
+        fields:
           banner: fields/banner
 
   teaser: tabs/teaser
-  children: 
+  children:
     extends: tabs/children
     columns:
       - width: 1/1
-        sections: 
-          pages: 
+        sections:
+          pages:
             # extends: sections/pages
             image: false
             label: " "

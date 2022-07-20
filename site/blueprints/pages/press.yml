@@ -1,6 +1,7 @@
 #
 # @info Default page blueprint
 # @path site/blueprints/pages/default.yml
+# 20220719
 #
 
 title: Default
@@ -28,13 +29,13 @@ subpages:
     template: media
 
 tabs:
-  content: 
+  content:
     icon: edit
     label: Inhalt
-    columns: 
+    columns:
       - width: 2/3
         sections:
-          content: 
+          content:
             type: fields
             fields:
               subheading: fields/subheading
@@ -51,10 +52,9 @@ tabs:
               color: "#FFFFFF"
               icon: "video"
               query: false
-          punctuation: sections/punctuation-helper
-      - width: 1/3  
+      - width: 1/3
         sticky: true
-        fields: 
+        fields:
           banner: fields/banner
 
   teaser: tabs/teaser

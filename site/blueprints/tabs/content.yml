@@ -1,23 +1,21 @@
 #
 # @info Content tab
 # @path site/blueprints/tabs/content.yml
-# @date 20220511
+# @date 20220719
 #
 
 icon: edit
 label: Inhalt
 
-columns: 
+columns:
   - width: 3/4
     sections:
-      content: 
+      content:
         type: fields
         fields:
           subheading: fields/subheading
           contents: fields/contents
-      punctuation: sections/punctuation-helper
-
-  - width: 1/4  
+  - width: 1/4
     sticky: true
-    fields: 
+    fields:
       banner: fields/banner

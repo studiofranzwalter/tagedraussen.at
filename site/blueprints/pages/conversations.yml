@@ -28,13 +28,13 @@ subpages:
     template: media
 
 tabs:
-  content: 
+  content:
     icon: edit
     label: Inhalt
-    columns: 
+    columns:
       - width: 3/4
         sections:
-          content: 
+          content:
             type: fields
             fields:
               subheading: fields/subheading
@@ -50,15 +50,14 @@ tabs:
               back: "#007956"
               color: "#FFFFFF"
               icon: "audio"
-              query: false       
-          punctuation: sections/punctuation-helper
-      - width: 1/4  
+              query: false
+      - width: 1/4
         sticky: true
-        fields: 
+        fields:
           banner: fields/banner
 
   teaser: tabs/teaser
-  podcast: 
+  podcast:
     icon: live
     title: RSS-Feed
     fields:

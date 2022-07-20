@@ -26,24 +26,23 @@ tabs:
   content:
     icon: edit
     label: Inhalt
-    columns: 
+    columns:
       - width: 3/4
         sections:
-          content: 
+          content:
             type: fields
             fields:
               subheading: fields/subheading
               contents: fields/contents
-          punctuation: sections/punctuation-helper
-      - width: 1/4  
+      - width: 1/4
         sticky: true
-        fields: 
+        fields:
           bannerType:
             default: empty
             help: "<code contenteditable>->bannerType()</code>"
-            label: 
+            label:
               de: Banner-Typ
-              en: Banner type   
+              en: Banner type
             options:
               logo:
                 text: Schriftzug
